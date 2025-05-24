@@ -42,6 +42,7 @@
             pnMain = new Panel();
             statusStrip1 = new StatusStrip();
             toolStripStatusLabel1 = new ToolStripStatusLabel();
+            pnMain1 = new Panel();
             menuStrip1.SuspendLayout();
             statusStrip1.SuspendLayout();
             SuspendLayout();
@@ -52,7 +53,7 @@
             menuStrip1.Items.AddRange(new ToolStripItem[] { msTK, msQuanLy, msThongKe, msHoTro, msNhanVien });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
-            menuStrip1.Size = new Size(830, 24);
+            menuStrip1.Size = new Size(984, 24);
             menuStrip1.TabIndex = 0;
             menuStrip1.Text = "menuStrip1";
             // 
@@ -133,33 +134,43 @@
             // 
             pnMain.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             pnMain.AutoSize = true;
+            pnMain.AutoSizeMode = AutoSizeMode.GrowAndShrink;
             pnMain.BackgroundImageLayout = ImageLayout.Stretch;
             pnMain.Location = new Point(0, 32);
             pnMain.Name = "pnMain";
-            pnMain.Size = new Size(830, 385);
+            pnMain.Size = new Size(0, 0);
             pnMain.TabIndex = 1;
             // 
             // statusStrip1
             // 
             statusStrip1.Items.AddRange(new ToolStripItem[] { toolStripStatusLabel1 });
-            statusStrip1.Location = new Point(0, 443);
+            statusStrip1.Location = new Point(0, 539);
             statusStrip1.Name = "statusStrip1";
-            statusStrip1.Size = new Size(830, 22);
+            statusStrip1.Size = new Size(984, 22);
             statusStrip1.TabIndex = 2;
             statusStrip1.Text = "statusStrip1";
             // 
             // toolStripStatusLabel1
             // 
             toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            toolStripStatusLabel1.Size = new Size(118, 17);
-            toolStripStatusLabel1.Text = "toolStripStatusLabel1";
+            toolStripStatusLabel1.Size = new Size(32, 17);
+            toolStripStatusLabel1.Text = "Ô YE";
             toolStripStatusLabel1.Click += toolStripStatusLabel1_Click;
+            // 
+            // pnMain1
+            // 
+            pnMain1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            pnMain1.Location = new Point(0, 27);
+            pnMain1.Name = "pnMain1";
+            pnMain1.Size = new Size(972, 509);
+            pnMain1.TabIndex = 3;
             // 
             // FRMMain
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(830, 465);
+            ClientSize = new Size(984, 561);
+            Controls.Add(pnMain1);
             Controls.Add(statusStrip1);
             Controls.Add(pnMain);
             Controls.Add(menuStrip1);
@@ -192,5 +203,6 @@
         private ToolStripStatusLabel toolStripStatusLabel1;
         private ToolStripMenuItem menustripTheLuuDong;
         private ToolStripMenuItem msNhanVien;
+        private Panel pnMain1;
     }
 }

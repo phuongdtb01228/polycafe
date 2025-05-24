@@ -59,6 +59,7 @@
             // 
             txtMaThe.Location = new Point(150, 101);
             txtMaThe.Name = "txtMaThe";
+            txtMaThe.ReadOnly = true;
             txtMaThe.Size = new Size(100, 23);
             txtMaThe.TabIndex = 1;
             // 
@@ -70,14 +71,16 @@
             btnThem.TabIndex = 2;
             btnThem.Text = "Thêm";
             btnThem.UseVisualStyleBackColor = true;
+            btnThem.Click += btnThem_Click;
             // 
             // dgvTheLuuDong
             // 
             dgvTheLuuDong.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvTheLuuDong.Location = new Point(379, 104);
             dgvTheLuuDong.Name = "dgvTheLuuDong";
-            dgvTheLuuDong.Size = new Size(402, 343);
+            dgvTheLuuDong.Size = new Size(427, 343);
             dgvTheLuuDong.TabIndex = 3;
+            dgvTheLuuDong.CellDoubleClick += dgvTheLuuDong_CellDoubleClick;
             // 
             // label2
             // 
@@ -122,6 +125,7 @@
             btnXoa.TabIndex = 9;
             btnXoa.Text = "Xóa ";
             btnXoa.UseVisualStyleBackColor = true;
+            btnXoa.Click += btnXoa_Click;
             // 
             // btnSua
             // 
@@ -131,6 +135,7 @@
             btnSua.TabIndex = 10;
             btnSua.Text = "Sửa";
             btnSua.UseVisualStyleBackColor = true;
+            btnSua.Click += btnSua_Click;
             // 
             // btnLamMoi
             // 
@@ -140,6 +145,7 @@
             btnLamMoi.TabIndex = 11;
             btnLamMoi.Text = "Làm Mới";
             btnLamMoi.UseVisualStyleBackColor = true;
+            btnLamMoi.Click += btnLamMoi_Click;
             // 
             // cbHoatDong
             // 

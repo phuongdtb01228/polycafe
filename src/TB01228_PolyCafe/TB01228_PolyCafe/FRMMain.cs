@@ -48,8 +48,8 @@ namespace GUI_PolyCafe
             formchild.TopLevel = false;
             formchild.FormBorderStyle = FormBorderStyle.None;
             formchild.Dock = DockStyle.Fill;
-            pnMain.Controls.Add(formchild);
-            pnMain.Tag = formchild;
+            pnMain1.Controls.Add(formchild);
+            pnMain1.Tag = formchild;
             formchild.BringToFront();
             formchild.Show();
 

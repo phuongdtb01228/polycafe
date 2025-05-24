@@ -39,8 +39,6 @@
             label6 = new Label();
             txtMatKhau = new TextBox();
             label7 = new Label();
-            rdbNhanVien = new RadioButton();
-            rdbQuanLy = new RadioButton();
             DGVNhanVien = new DataGridView();
             btnThem = new Button();
             btnXoa = new Button();
@@ -48,11 +46,13 @@
             btnLamMoi = new Button();
             tbTimKiem = new TextBox();
             btnTimKiem = new Button();
-            rdbKhongHoatDong = new RadioButton();
-            rdbHoatDong = new RadioButton();
             label8 = new Label();
             pnTrangThai = new Panel();
+            cbKhongHoatDong = new CheckBox();
+            cbHoatDong = new CheckBox();
             pnVaiTro = new Panel();
+            cbQuanLy = new CheckBox();
+            cbNhanVien = new CheckBox();
             ((System.ComponentModel.ISupportInitialize)DGVNhanVien).BeginInit();
             pnTrangThai.SuspendLayout();
             pnVaiTro.SuspendLayout();
@@ -100,7 +100,7 @@
             // 
             label4.AutoSize = true;
             label4.ForeColor = SystemColors.ButtonHighlight;
-            label4.Location = new Point(13, 13);
+            label4.Location = new Point(13, 6);
             label4.Name = "label4";
             label4.Size = new Size(42, 15);
             label4.TabIndex = 7;
@@ -160,30 +160,6 @@
             label7.TabIndex = 9;
             label7.Text = "Mật Khẩu";
             // 
-            // rdbNhanVien
-            // 
-            rdbNhanVien.AutoSize = true;
-            rdbNhanVien.ForeColor = SystemColors.ButtonHighlight;
-            rdbNhanVien.Location = new Point(84, 9);
-            rdbNhanVien.Name = "rdbNhanVien";
-            rdbNhanVien.Size = new Size(80, 19);
-            rdbNhanVien.TabIndex = 13;
-            rdbNhanVien.TabStop = true;
-            rdbNhanVien.Text = "Nhân Viên";
-            rdbNhanVien.UseVisualStyleBackColor = true;
-            // 
-            // rdbQuanLy
-            // 
-            rdbQuanLy.AutoSize = true;
-            rdbQuanLy.ForeColor = SystemColors.ControlLightLight;
-            rdbQuanLy.Location = new Point(182, 11);
-            rdbQuanLy.Name = "rdbQuanLy";
-            rdbQuanLy.Size = new Size(68, 19);
-            rdbQuanLy.TabIndex = 14;
-            rdbQuanLy.TabStop = true;
-            rdbQuanLy.Text = "Quản Lý";
-            rdbQuanLy.UseVisualStyleBackColor = true;
-            // 
             // DGVNhanVien
             // 
             DGVNhanVien.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -191,12 +167,13 @@
             DGVNhanVien.Name = "DGVNhanVien";
             DGVNhanVien.Size = new Size(558, 227);
             DGVNhanVien.TabIndex = 15;
+            DGVNhanVien.CellContentClick += DGVNhanVien_CellContentClick;
             DGVNhanVien.CellDoubleClick += DGVNhanVien_CellDoubleClick;
             // 
             // btnThem
             // 
             btnThem.BackgroundImage = Properties.Resources.Screenshot_2025_05_22_132550;
-            btnThem.ForeColor = SystemColors.ButtonHighlight;
+            btnThem.ForeColor = SystemColors.ButtonFace;
             btnThem.Location = new Point(337, 328);
             btnThem.Name = "btnThem";
             btnThem.Size = new Size(190, 53);
@@ -208,7 +185,7 @@
             // btnXoa
             // 
             btnXoa.BackgroundImage = Properties.Resources.Screenshot_2025_05_22_132550;
-            btnXoa.ForeColor = SystemColors.ButtonHighlight;
+            btnXoa.ForeColor = SystemColors.ButtonFace;
             btnXoa.Location = new Point(337, 405);
             btnXoa.Name = "btnXoa";
             btnXoa.Size = new Size(190, 53);
@@ -220,7 +197,7 @@
             // btnSua
             // 
             btnSua.BackgroundImage = Properties.Resources.Screenshot_2025_05_22_132550;
-            btnSua.ForeColor = SystemColors.ButtonHighlight;
+            btnSua.ForeColor = SystemColors.ButtonFace;
             btnSua.Location = new Point(608, 327);
             btnSua.Name = "btnSua";
             btnSua.Size = new Size(190, 53);
@@ -232,13 +209,14 @@
             // btnLamMoi
             // 
             btnLamMoi.BackgroundImage = Properties.Resources.Screenshot_2025_05_22_132550;
-            btnLamMoi.ForeColor = SystemColors.ButtonHighlight;
+            btnLamMoi.ForeColor = SystemColors.ButtonFace;
             btnLamMoi.Location = new Point(608, 402);
             btnLamMoi.Name = "btnLamMoi";
             btnLamMoi.Size = new Size(190, 53);
             btnLamMoi.TabIndex = 19;
             btnLamMoi.Text = "Làm Mới";
             btnLamMoi.UseVisualStyleBackColor = true;
+            btnLamMoi.Click += btnLamMoi_Click;
             // 
             // tbTimKiem
             // 
@@ -259,31 +237,6 @@
             btnTimKiem.Text = "Tìm Kiếm";
             btnTimKiem.UseVisualStyleBackColor = true;
             // 
-            // rdbKhongHoatDong
-            // 
-            rdbKhongHoatDong.AutoSize = true;
-            rdbKhongHoatDong.ForeColor = SystemColors.ButtonHighlight;
-            rdbKhongHoatDong.Location = new Point(182, 3);
-            rdbKhongHoatDong.Name = "rdbKhongHoatDong";
-            rdbKhongHoatDong.Size = new Size(121, 19);
-            rdbKhongHoatDong.TabIndex = 24;
-            rdbKhongHoatDong.TabStop = true;
-            rdbKhongHoatDong.Text = "Không Hoạt Đông";
-            rdbKhongHoatDong.UseVisualStyleBackColor = true;
-            rdbKhongHoatDong.CheckedChanged += rdbKhongHoatDong_CheckedChanged;
-            // 
-            // rdbHoatDong
-            // 
-            rdbHoatDong.AutoSize = true;
-            rdbHoatDong.ForeColor = SystemColors.ButtonHighlight;
-            rdbHoatDong.Location = new Point(84, 3);
-            rdbHoatDong.Name = "rdbHoatDong";
-            rdbHoatDong.Size = new Size(83, 19);
-            rdbHoatDong.TabIndex = 23;
-            rdbHoatDong.TabStop = true;
-            rdbHoatDong.Text = "Hoạt Động";
-            rdbHoatDong.UseVisualStyleBackColor = true;
-            // 
             // label8
             // 
             label8.AutoSize = true;
@@ -297,25 +250,73 @@
             // pnTrangThai
             // 
             pnTrangThai.BackColor = Color.FromArgb(64, 64, 64);
-            pnTrangThai.Controls.Add(rdbKhongHoatDong);
+            pnTrangThai.Controls.Add(cbKhongHoatDong);
+            pnTrangThai.Controls.Add(cbHoatDong);
             pnTrangThai.Controls.Add(label8);
-            pnTrangThai.Controls.Add(rdbHoatDong);
-            pnTrangThai.Location = new Point(5, 341);
+            pnTrangThai.Location = new Point(5, 345);
             pnTrangThai.Name = "pnTrangThai";
             pnTrangThai.Size = new Size(307, 28);
             pnTrangThai.TabIndex = 25;
             pnTrangThai.Paint += panel1_Paint;
             // 
+            // cbKhongHoatDong
+            // 
+            cbKhongHoatDong.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            cbKhongHoatDong.AutoSize = true;
+            cbKhongHoatDong.ForeColor = SystemColors.ButtonHighlight;
+            cbKhongHoatDong.Location = new Point(183, 5);
+            cbKhongHoatDong.Name = "cbKhongHoatDong";
+            cbKhongHoatDong.Size = new Size(122, 19);
+            cbKhongHoatDong.TabIndex = 24;
+            cbKhongHoatDong.Text = "Không Hoạt Động";
+            cbKhongHoatDong.UseVisualStyleBackColor = true;
+            // 
+            // cbHoatDong
+            // 
+            cbHoatDong.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            cbHoatDong.AutoSize = true;
+            cbHoatDong.ForeColor = SystemColors.ButtonHighlight;
+            cbHoatDong.Location = new Point(85, 4);
+            cbHoatDong.Name = "cbHoatDong";
+            cbHoatDong.Size = new Size(84, 19);
+            cbHoatDong.TabIndex = 23;
+            cbHoatDong.Text = "Hoạt Động";
+            cbHoatDong.UseVisualStyleBackColor = true;
+            // 
             // pnVaiTro
             // 
             pnVaiTro.BackColor = Color.FromArgb(64, 64, 64);
-            pnVaiTro.Controls.Add(rdbQuanLy);
+            pnVaiTro.Controls.Add(cbQuanLy);
+            pnVaiTro.Controls.Add(cbNhanVien);
             pnVaiTro.Controls.Add(label4);
-            pnVaiTro.Controls.Add(rdbNhanVien);
-            pnVaiTro.Location = new Point(6, 410);
+            pnVaiTro.Location = new Point(6, 420);
             pnVaiTro.Name = "pnVaiTro";
-            pnVaiTro.Size = new Size(306, 41);
+            pnVaiTro.Size = new Size(307, 28);
             pnVaiTro.TabIndex = 26;
+            // 
+            // cbQuanLy
+            // 
+            cbQuanLy.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            cbQuanLy.AutoSize = true;
+            cbQuanLy.ForeColor = SystemColors.ButtonHighlight;
+            cbQuanLy.Location = new Point(182, 5);
+            cbQuanLy.Name = "cbQuanLy";
+            cbQuanLy.Size = new Size(69, 19);
+            cbQuanLy.TabIndex = 25;
+            cbQuanLy.Text = "Quản Lý";
+            cbQuanLy.UseVisualStyleBackColor = true;
+            // 
+            // cbNhanVien
+            // 
+            cbNhanVien.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            cbNhanVien.AutoSize = true;
+            cbNhanVien.ForeColor = SystemColors.ButtonHighlight;
+            cbNhanVien.Location = new Point(84, 4);
+            cbNhanVien.Name = "cbNhanVien";
+            cbNhanVien.Size = new Size(81, 19);
+            cbNhanVien.TabIndex = 24;
+            cbNhanVien.Text = "Nhân Viên";
+            cbNhanVien.UseVisualStyleBackColor = true;
             // 
             // FRMNhanVien
             // 
@@ -348,6 +349,7 @@
             Name = "FRMNhanVien";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "FRMNhanVien";
+            WindowState = FormWindowState.Maximized;
             Load += FRMNhanVien_Load;
             ((System.ComponentModel.ISupportInitialize)DGVNhanVien).EndInit();
             pnTrangThai.ResumeLayout(false);
@@ -370,8 +372,6 @@
         private Label label6;
         private TextBox txtMatKhau;
         private Label label7;
-        private RadioButton rdbNhanVien;
-        private RadioButton rdbQuanLy;
         private DataGridView DGVNhanVien;
         private Button btnThem;
         private Button btnXoa;
@@ -379,10 +379,12 @@
         private Button btnLamMoi;
         private TextBox tbTimKiem;
         private Button btnTimKiem;
-        private RadioButton rdbKhongHoatDong;
-        private RadioButton rdbHoatDong;
         private Label label8;
         private Panel pnTrangThai;
         private Panel pnVaiTro;
+        private CheckBox cbHoatDong;
+        private CheckBox cbKhongHoatDong;
+        private CheckBox cbQuanLy;
+        private CheckBox cbNhanVien;
     }
 }

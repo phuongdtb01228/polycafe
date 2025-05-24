@@ -13,5 +13,7 @@ namespace DTO_PolyCafe
         public string ChuSoHuu { get; set; }
         public bool TrangThai { get; set; }
 
+        public string TrangThaiText => TrangThai ? "Hoạt Động" : "Ngừng Hoạt Động";
+
     }
 }

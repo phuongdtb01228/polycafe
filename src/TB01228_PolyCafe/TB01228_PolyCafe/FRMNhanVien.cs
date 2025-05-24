@@ -34,8 +34,8 @@ namespace GUI_PolyCafe
             DGVNhanVien.Columns["HoTen"].HeaderText = "Họ Tên";
             DGVNhanVien.Columns["Email"].HeaderText = "Email";
             DGVNhanVien.Columns["MatKhau"].HeaderText = "Mật Khẩu";
-            DGVNhanVien.Columns["VaiTro"].HeaderText = "Vai Trò";
-            DGVNhanVien.Columns["TrangThai"].HeaderText = "Trạng Thái";
+            DGVNhanVien.Columns["VaiTroText"].HeaderText = "Vai Trò";
+            DGVNhanVien.Columns["TrangThaiText"].HeaderText = "Trạng Thái";
             DGVNhanVien.Columns["VaiTro"].Visible = false; // Ẩn cột Vai Trò
             DGVNhanVien.Columns["TrangThai"].Visible = false; // Ẩn cột Trạng Thái
 
@@ -49,10 +49,10 @@ namespace GUI_PolyCafe
             txtEmail.Clear();
             txtMatKhau.Clear();
             txtXacNhanMatKhau.Clear();
-            rdbQuanLy.Checked = false;
-            rdbNhanVien.Checked = false;
-            rdbHoatDong.Checked = false;
-            rdbKhongHoatDong.Checked = false;
+            cbQuanLy.Checked = false;
+            cbNhanVien.Checked = false;
+            cbHoatDong.Checked = false;
+            cbKhongHoatDong.Checked = false;
         }
 
         private void btnThem_Click(object sender, EventArgs e)
@@ -63,8 +63,8 @@ namespace GUI_PolyCafe
                 string hoTen = txtHoTen.Text.Trim();
                 string email = txtEmail.Text.Trim();
                 string matKhau = txtMatKhau.Text.Trim();
-                bool vaiTro = rdbQuanLy.Checked;  // Nếu là Trưởng phòng
-                bool trangThai = rdbHoatDong.Checked; // Nếu được check là đang active
+                bool vaiTro = cbQuanLy.Checked;  // Nếu là Trưởng phòng
+                bool trangThai = cbHoatDong.Checked; // Nếu được check là đang active
 
                 // Bước 2: Kiểm tra dữ liệu đầu vào
                 if (string.IsNullOrEmpty(hoTen) ||
@@ -141,7 +141,7 @@ namespace GUI_PolyCafe
                 MessageBox.Show("Lỗi: " + ex.Message, "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-        
+
 
         private void btnSua_Click(object sender, EventArgs e)
         {
@@ -155,7 +155,7 @@ namespace GUI_PolyCafe
                 string xacNhanMK = txtXacNhanMatKhau.Text.Trim();
                 bool vaiTro;
 
-                if (rdbNhanVien.Checked)
+                if (cbNhanVien.Checked)
                 {
                     vaiTro = false; // Nhân viên
                 }
@@ -213,19 +213,19 @@ namespace GUI_PolyCafe
                 txtXacNhanMatKhau.Text = row.Cells["MatKhau"].Value.ToString();
                 if (Convert.ToBoolean(row.Cells["VaiTro"].Value))
                 {
-                    rdbQuanLy.Checked = true;
+                    cbQuanLy.Checked = true;
                 }
                 else
                 {
-                    rdbNhanVien.Checked = true;
+                    cbNhanVien.Checked = true;
                 }
                 if (Convert.ToBoolean(row.Cells["TrangThai"].Value))
                 {
-                    rdbHoatDong.Checked = true;
+                    cbHoatDong.Checked = true;
                 }
                 else
                 {
-                    rdbKhongHoatDong.Checked = true;
+                    cbKhongHoatDong.Checked = true;
                 }
             }
         }
@@ -233,6 +233,16 @@ namespace GUI_PolyCafe
         private void rdbKhongHoatDong_CheckedChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void DGVNhanVien_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void btnLamMoi_Click(object sender, EventArgs e)
+        {
+            LoadDanhSachNhanVien();
         }
     }
 }

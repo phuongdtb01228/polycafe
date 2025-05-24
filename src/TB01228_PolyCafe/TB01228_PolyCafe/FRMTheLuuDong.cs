@@ -9,6 +9,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using BLL_PolyCafe;
 using DAL_PolyCafe;
+using DTO_PolyCafe;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ProgressBar;
 
 namespace GUI_PolyCafe
 {
@@ -28,18 +30,153 @@ namespace GUI_PolyCafe
         private void LoadTheLuuDong()
         {
             BUSTheLuuDong busTheLuuDong = new BUSTheLuuDong();
-            DGVNhanVien.DataSource = null;
-            DGVNhanVien.DataSource = busNhanVien.GetNhanVienList();
-            DGVNhanVien.Columns["MaNhanVien"].HeaderText = "Mã Nhân Viên";
-            DGVNhanVien.Columns["HoTen"].HeaderText = "Họ Tên";
-            DGVNhanVien.Columns["Email"].HeaderText = "Email";
-            DGVNhanVien.Columns["MatKhau"].HeaderText = "Mật Khẩu";
-            DGVNhanVien.Columns["VaiTro"].HeaderText = "Vai Trò";
-            DGVNhanVien.Columns["TrangThai"].HeaderText = "Trạng Thái";
-            DGVNhanVien.Columns["VaiTro"].Visible = false; // Ẩn cột Vai Trò
-            DGVNhanVien.Columns["TrangThai"].Visible = false; // Ẩn cột Trạng Thái
+            dgvTheLuuDong.DataSource = null;
+            dgvTheLuuDong.DataSource = busTheLuuDong.GetTheLuuDongList();
+            dgvTheLuuDong.Columns["MaThe"].HeaderText = "Mã Thẻ";
+            dgvTheLuuDong.Columns["ChuSoHuu"].HeaderText = "Chủ Sỡ Hữu";
+            dgvTheLuuDong.Columns["TrangThaiText"].HeaderText = "Trạng Thái";
+            dgvTheLuuDong.Columns["TrangThai"].Visible = false; // Ẩn cột Trạng Thái
 
-            DGVNhanVien.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dgvTheLuuDong.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+        }
+
+        private void ClearForm()
+        {
+            txtMaThe.Clear();
+            txtChuSoHuu.Clear();
+            cbHoatDong.Checked = false;
+            cbKhongHoatDong.Checked = false;
+        }
+
+        private void btnThem_Click(object sender, EventArgs e)
+        {
+            try
+            {
+
+                string chuSoHuu = txtChuSoHuu.Text.Trim();
+                bool trangThai = cbHoatDong.Checked;
+
+
+                if (string.IsNullOrEmpty(chuSoHuu))
+                {
+                    MessageBox.Show("Vui lòng nhập đầy đủ thông tin!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
+
+
+
+                TheLuuDong tld = new TheLuuDong
+                {
+                    ChuSoHuu = chuSoHuu,
+
+                    TrangThai = trangThai
+                };
+
+                // Bước 4: Thêm vào CSDL
+                busTheLuuDong.InsertTheLuuDong(tld);
+                MessageBox.Show("Thêm nhân viên thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                ClearForm(); // Xóa form sau khi thêm
+                LoadTheLuuDong();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi: " + ex.Message, "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void dgvTheLuuDong_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                DataGridViewRow row = dgvTheLuuDong.Rows[e.RowIndex];
+                txtMaThe.Text = row.Cells["MaThe"].Value.ToString();
+                txtChuSoHuu.Text = row.Cells["ChuSoHuu"].Value.ToString();
+                if (Convert.ToBoolean(row.Cells["TrangThai"].Value))
+                {
+                    cbHoatDong.Checked = true;
+                }
+                else
+                {
+                    cbKhongHoatDong.Checked = true;
+                }
+            }
+        }
+
+        private void btnXoa_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                // Bước 1: Lấy mã nhân viên từ form
+                string maThe = txtMaThe.Text.Trim();
+                // Bước 2: Kiểm tra dữ liệu đầu vào
+                if (string.IsNullOrEmpty(maThe))
+                {
+                    MessageBox.Show("Vui lòng chọn nhân viên để xóa!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+                // Bước 3: Xóa nhân viên khỏi CSDL
+                busTheLuuDong.DeleteThe(maThe);
+                MessageBox.Show("Xóa nhân viên thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                ClearForm(); // Xóa form sau khi xóa
+                LoadTheLuuDong();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi: " + ex.Message, "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void btnSua_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                // Lấy dữ liệu từ form
+                string maThe = txtMaThe.Text.Trim();
+                string chuSoHuu = txtChuSoHuu.Text.Trim();
+                bool TrangThai;
+
+                if (cbHoatDong.Checked)
+                {
+                    TrangThai = false; // Nhân viên
+                }
+                else
+                {
+                    TrangThai = true; // Quản lý
+                }
+
+                // Kiểm tra dữ liệu nhập vào
+                if (string.IsNullOrEmpty(maThe) || string.IsNullOrEmpty(chuSoHuu))
+                {
+                    MessageBox.Show("Vui lòng nhập đầy đủ thông tin!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
+                // Tạo đối tượng nhân viên
+                TheLuuDong tld = new TheLuuDong
+                {
+                    MaThe = maThe,
+                    ChuSoHuu = chuSoHuu,
+                    TrangThai = true // Giữ trạng thái mặc định là active
+                };
+
+                // Gọi DAL để cập nhật nhân viên vào trong database
+                BUSTheLuuDong busTheLuuDong = new BUSTheLuuDong();
+                busTheLuuDong.Update(tld);
+                MessageBox.Show("Cập nhật nhân viên thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                ClearForm();
+                LoadTheLuuDong();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void btnLamMoi_Click(object sender, EventArgs e)
+        {
+            LoadTheLuuDong();
         }
     }
 }
