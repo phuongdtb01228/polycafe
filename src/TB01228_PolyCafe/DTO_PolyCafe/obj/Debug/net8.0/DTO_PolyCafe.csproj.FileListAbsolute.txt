@@ -1,0 +1,11 @@
+E:\DU_AN_C#\TB01228_PolyCafe\DTO_PolyCafe\bin\Debug\net8.0\DTO_PolyCafe.deps.json
+E:\DU_AN_C#\TB01228_PolyCafe\DTO_PolyCafe\bin\Debug\net8.0\DTO_PolyCafe.dll
+E:\DU_AN_C#\TB01228_PolyCafe\DTO_PolyCafe\bin\Debug\net8.0\DTO_PolyCafe.pdb
+E:\DU_AN_C#\TB01228_PolyCafe\DTO_PolyCafe\obj\Debug\net8.0\DTO_PolyCafe.GeneratedMSBuildEditorConfig.editorconfig
+E:\DU_AN_C#\TB01228_PolyCafe\DTO_PolyCafe\obj\Debug\net8.0\DTO_PolyCafe.AssemblyInfoInputs.cache
+E:\DU_AN_C#\TB01228_PolyCafe\DTO_PolyCafe\obj\Debug\net8.0\DTO_PolyCafe.AssemblyInfo.cs
+E:\DU_AN_C#\TB01228_PolyCafe\DTO_PolyCafe\obj\Debug\net8.0\DTO_PolyCafe.csproj.CoreCompileInputs.cache
+E:\DU_AN_C#\TB01228_PolyCafe\DTO_PolyCafe\obj\Debug\net8.0\DTO_PolyCafe.dll
+E:\DU_AN_C#\TB01228_PolyCafe\DTO_PolyCafe\obj\Debug\net8.0\refint\DTO_PolyCafe.dll
+E:\DU_AN_C#\TB01228_PolyCafe\DTO_PolyCafe\obj\Debug\net8.0\DTO_PolyCafe.pdb
+E:\DU_AN_C#\TB01228_PolyCafe\DTO_PolyCafe\obj\Debug\net8.0\ref\DTO_PolyCafe.dll
