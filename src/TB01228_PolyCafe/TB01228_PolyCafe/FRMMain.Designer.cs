@@ -36,6 +36,8 @@
             menustripThoat = new ToolStripMenuItem();
             msQuanLy = new ToolStripMenuItem();
             menustripTheLuuDong = new ToolStripMenuItem();
+            sảnPhẩmToolStripMenuItem = new ToolStripMenuItem();
+            loạiSảnPhẩmToolStripMenuItem = new ToolStripMenuItem();
             msThongKe = new ToolStripMenuItem();
             msHoTro = new ToolStripMenuItem();
             msNhanVien = new ToolStripMenuItem();
@@ -53,7 +55,7 @@
             menuStrip1.Items.AddRange(new ToolStripItem[] { msTK, msQuanLy, msThongKe, msHoTro, msNhanVien });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
-            menuStrip1.Size = new Size(984, 24);
+            menuStrip1.Size = new Size(1006, 24);
             menuStrip1.TabIndex = 0;
             menuStrip1.Text = "menuStrip1";
             // 
@@ -94,7 +96,7 @@
             // 
             // msQuanLy
             // 
-            msQuanLy.DropDownItems.AddRange(new ToolStripItem[] { menustripTheLuuDong });
+            msQuanLy.DropDownItems.AddRange(new ToolStripItem[] { menustripTheLuuDong, sảnPhẩmToolStripMenuItem, loạiSảnPhẩmToolStripMenuItem });
             msQuanLy.Image = Properties.Resources.Screenshot_2025_05_16_082306;
             msQuanLy.Name = "msQuanLy";
             msQuanLy.Size = new Size(78, 20);
@@ -103,9 +105,23 @@
             // menustripTheLuuDong
             // 
             menustripTheLuuDong.Name = "menustripTheLuuDong";
-            menustripTheLuuDong.Size = new Size(149, 22);
+            menustripTheLuuDong.Size = new Size(180, 22);
             menustripTheLuuDong.Text = "Thẻ Lưu Động";
             menustripTheLuuDong.Click += thẻLưuĐộngToolStripMenuItem_Click;
+            // 
+            // sảnPhẩmToolStripMenuItem
+            // 
+            sảnPhẩmToolStripMenuItem.Name = "sảnPhẩmToolStripMenuItem";
+            sảnPhẩmToolStripMenuItem.Size = new Size(180, 22);
+            sảnPhẩmToolStripMenuItem.Text = "Sản Phẩm";
+            sảnPhẩmToolStripMenuItem.Click += sảnPhẩmToolStripMenuItem_Click;
+            // 
+            // loạiSảnPhẩmToolStripMenuItem
+            // 
+            loạiSảnPhẩmToolStripMenuItem.Name = "loạiSảnPhẩmToolStripMenuItem";
+            loạiSảnPhẩmToolStripMenuItem.Size = new Size(180, 22);
+            loạiSảnPhẩmToolStripMenuItem.Text = "Loại Sản Phẩm";
+            loạiSảnPhẩmToolStripMenuItem.Click += loạiSảnPhẩmToolStripMenuItem_Click;
             // 
             // msThongKe
             // 
@@ -144,9 +160,9 @@
             // statusStrip1
             // 
             statusStrip1.Items.AddRange(new ToolStripItem[] { toolStripStatusLabel1 });
-            statusStrip1.Location = new Point(0, 539);
+            statusStrip1.Location = new Point(0, 609);
             statusStrip1.Name = "statusStrip1";
-            statusStrip1.Size = new Size(984, 22);
+            statusStrip1.Size = new Size(1006, 22);
             statusStrip1.TabIndex = 2;
             statusStrip1.Text = "statusStrip1";
             // 
@@ -162,19 +178,21 @@
             pnMain1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             pnMain1.Location = new Point(0, 27);
             pnMain1.Name = "pnMain1";
-            pnMain1.Size = new Size(972, 509);
+            pnMain1.Size = new Size(1006, 592);
             pnMain1.TabIndex = 3;
             // 
             // FRMMain
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(984, 561);
+            ClientSize = new Size(1006, 631);
             Controls.Add(pnMain1);
             Controls.Add(statusStrip1);
             Controls.Add(pnMain);
             Controls.Add(menuStrip1);
             MainMenuStrip = menuStrip1;
+            MaximumSize = new Size(1022, 670);
+            MinimumSize = new Size(1022, 670);
             Name = "FRMMain";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "FRMMain";
@@ -204,5 +222,7 @@
         private ToolStripMenuItem menustripTheLuuDong;
         private ToolStripMenuItem msNhanVien;
         private Panel pnMain1;
+        private ToolStripMenuItem sảnPhẩmToolStripMenuItem;
+        private ToolStripMenuItem loạiSảnPhẩmToolStripMenuItem;
     }
 }

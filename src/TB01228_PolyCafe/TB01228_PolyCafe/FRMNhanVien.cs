@@ -244,6 +244,35 @@ namespace GUI_PolyCafe
         {
             LoadDanhSachNhanVien();
         }
+
+        private void SearchInAllCells(string keyword)
+        {
+            foreach (DataGridViewRow row in DGVNhanVien.Rows)
+            {
+                foreach (DataGridViewCell cell in row.Cells)
+                {
+                    if (cell.Value != null && cell.Value.ToString().ToLower().Contains(keyword.ToLower()))
+                    {
+
+                        row.Selected = true;
+                        break;
+                    }
+                    else
+                    {
+                        row.Selected = false;
+                    }
+                }
+            }
+        }
+        private void btnTimKiem_Click(object sender, EventArgs e)
+        {
+            string keyWord = txtTimKiem.Text;
+            if (!string.IsNullOrWhiteSpace(keyWord))
+            {
+                SearchInAllCells(keyWord);
+            }
+            txtTimKiem.Clear();
+        }
     }
-}
+    }
 

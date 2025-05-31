@@ -54,7 +54,7 @@
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
             pictureBox1.Location = new Point(1, 1);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(798, 452);
+            pictureBox1.Size = new Size(987, 552);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 14;
             pictureBox1.TabStop = false;
@@ -65,9 +65,9 @@
             btnThoat.BackColor = Color.Transparent;
             btnThoat.BackgroundImage = Properties.Resources.Screenshot_2025_05_22_132550;
             btnThoat.ForeColor = SystemColors.ButtonHighlight;
-            btnThoat.Location = new Point(186, 370);
+            btnThoat.Location = new Point(457, 319);
             btnThoat.Name = "btnThoat";
-            btnThoat.Size = new Size(164, 49);
+            btnThoat.Size = new Size(201, 82);
             btnThoat.TabIndex = 26;
             btnThoat.Text = "Thoát";
             btnThoat.UseVisualStyleBackColor = false;
@@ -78,9 +78,9 @@
             btnDoiMK.BackColor = SystemColors.ActiveCaptionText;
             btnDoiMK.BackgroundImage = Properties.Resources.Screenshot_2025_05_22_132550;
             btnDoiMK.ForeColor = SystemColors.ButtonHighlight;
-            btnDoiMK.Location = new Point(186, 274);
+            btnDoiMK.Location = new Point(158, 319);
             btnDoiMK.Name = "btnDoiMK";
-            btnDoiMK.Size = new Size(164, 56);
+            btnDoiMK.Size = new Size(199, 82);
             btnDoiMK.TabIndex = 25;
             btnDoiMK.Text = "Đổi Mật Khẩu";
             btnDoiMK.UseVisualStyleBackColor = false;
@@ -88,7 +88,7 @@
             // 
             // txtXacNhanMK
             // 
-            txtXacNhanMK.Location = new Point(155, 206);
+            txtXacNhanMK.Location = new Point(158, 251);
             txtXacNhanMK.Name = "txtXacNhanMK";
             txtXacNhanMK.PasswordChar = '*';
             txtXacNhanMK.Size = new Size(230, 23);
@@ -99,7 +99,7 @@
             txtXacNhanMatKhau.AutoSize = true;
             txtXacNhanMatKhau.BackColor = Color.FromArgb(64, 64, 64);
             txtXacNhanMatKhau.ForeColor = SystemColors.ButtonHighlight;
-            txtXacNhanMatKhau.Location = new Point(27, 214);
+            txtXacNhanMatKhau.Location = new Point(27, 259);
             txtXacNhanMatKhau.Name = "txtXacNhanMatKhau";
             txtXacNhanMatKhau.Size = new Size(112, 15);
             txtXacNhanMatKhau.TabIndex = 23;
@@ -107,7 +107,7 @@
             // 
             // txtMatKhauMoi
             // 
-            txtMatKhauMoi.Location = new Point(158, 141);
+            txtMatKhauMoi.Location = new Point(161, 175);
             txtMatKhauMoi.Name = "txtMatKhauMoi";
             txtMatKhauMoi.PasswordChar = '*';
             txtMatKhauMoi.Size = new Size(227, 23);
@@ -118,7 +118,7 @@
             label3.AutoSize = true;
             label3.BackColor = Color.FromArgb(64, 64, 64);
             label3.ForeColor = SystemColors.ButtonHighlight;
-            label3.Location = new Point(57, 144);
+            label3.Location = new Point(57, 175);
             label3.Name = "label3";
             label3.Size = new Size(82, 15);
             label3.TabIndex = 21;
@@ -127,7 +127,7 @@
             // txtMatKhauCu
             // 
             txtMatKhauCu.BackColor = SystemColors.Info;
-            txtMatKhauCu.Location = new Point(158, 80);
+            txtMatKhauCu.Location = new Point(161, 109);
             txtMatKhauCu.Name = "txtMatKhauCu";
             txtMatKhauCu.PasswordChar = '*';
             txtMatKhauCu.Size = new Size(227, 23);
@@ -138,7 +138,7 @@
             label4.AutoSize = true;
             label4.BackColor = Color.FromArgb(64, 64, 64);
             label4.ForeColor = SystemColors.ButtonHighlight;
-            label4.Location = new Point(57, 83);
+            label4.Location = new Point(63, 109);
             label4.Name = "label4";
             label4.Size = new Size(76, 15);
             label4.TabIndex = 19;
@@ -146,7 +146,7 @@
             // 
             // txtTenNV
             // 
-            txtTenNV.Location = new Point(600, 75);
+            txtTenNV.Location = new Point(738, 101);
             txtTenNV.Name = "txtTenNV";
             txtTenNV.ReadOnly = true;
             txtTenNV.Size = new Size(188, 23);
@@ -155,7 +155,9 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(492, 149);
+            label2.BackColor = Color.FromArgb(64, 64, 64);
+            label2.ForeColor = SystemColors.ButtonHighlight;
+            label2.Location = new Point(605, 175);
             label2.Name = "label2";
             label2.Size = new Size(84, 15);
             label2.TabIndex = 17;
@@ -163,7 +165,7 @@
             // 
             // txtMaNV
             // 
-            txtMaNV.Location = new Point(600, 144);
+            txtMaNV.Location = new Point(738, 167);
             txtMaNV.Name = "txtMaNV";
             txtMaNV.ReadOnly = true;
             txtMaNV.Size = new Size(188, 23);
@@ -172,7 +174,9 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(494, 80);
+            label1.BackColor = Color.FromArgb(64, 64, 64);
+            label1.ForeColor = Color.White;
+            label1.Location = new Point(607, 109);
             label1.Name = "label1";
             label1.Size = new Size(82, 15);
             label1.TabIndex = 15;
@@ -181,7 +185,9 @@
             // cbMKMOI
             // 
             cbMKMOI.AutoSize = true;
-            cbMKMOI.Location = new Point(260, 173);
+            cbMKMOI.BackgroundImage = Properties.Resources.Screenshot_2025_05_22_132550;
+            cbMKMOI.ForeColor = SystemColors.ButtonHighlight;
+            cbMKMOI.Location = new Point(263, 213);
             cbMKMOI.Name = "cbMKMOI";
             cbMKMOI.Size = new Size(125, 19);
             cbMKMOI.TabIndex = 27;
@@ -192,23 +198,29 @@
             // cbMKCU
             // 
             cbMKCU.AutoSize = true;
-            cbMKCU.Location = new Point(260, 109);
+            cbMKCU.BackColor = SystemColors.ButtonHighlight;
+            cbMKCU.BackgroundImage = Properties.Resources.Screenshot_2025_05_22_132550;
+            cbMKCU.ForeColor = Color.White;
+            cbMKCU.Location = new Point(263, 138);
             cbMKCU.Name = "cbMKCU";
             cbMKCU.Size = new Size(125, 19);
             cbMKCU.TabIndex = 28;
             cbMKCU.Text = "Hiển Thị Mật Khẩu";
-            cbMKCU.UseVisualStyleBackColor = true;
+            cbMKCU.UseVisualStyleBackColor = false;
             cbMKCU.CheckedChanged += cbMKCU_CheckedChanged;
             // 
             // cbXACNHANMK
             // 
             cbXACNHANMK.AutoSize = true;
-            cbXACNHANMK.Location = new Point(260, 238);
+            cbXACNHANMK.BackColor = Color.FromArgb(64, 64, 64);
+            cbXACNHANMK.BackgroundImage = Properties.Resources.Screenshot_2025_05_22_132550;
+            cbXACNHANMK.ForeColor = SystemColors.ButtonHighlight;
+            cbXACNHANMK.Location = new Point(260, 280);
             cbXACNHANMK.Name = "cbXACNHANMK";
             cbXACNHANMK.Size = new Size(125, 19);
             cbXACNHANMK.TabIndex = 29;
             cbXACNHANMK.Text = "Hiển Thị Mật Khẩu";
-            cbXACNHANMK.UseVisualStyleBackColor = true;
+            cbXACNHANMK.UseVisualStyleBackColor = false;
             cbXACNHANMK.CheckedChanged += CBXACNHANMK_CheckedChanged;
             // 
             // frmDoiMatKhau1
@@ -216,7 +228,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             AutoSize = true;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(990, 553);
             Controls.Add(cbXACNHANMK);
             Controls.Add(cbMKCU);
             Controls.Add(cbMKMOI);
@@ -233,10 +245,11 @@
             Controls.Add(txtMaNV);
             Controls.Add(label1);
             Controls.Add(pictureBox1);
+            MaximumSize = new Size(1006, 592);
+            MinimumSize = new Size(1006, 592);
             Name = "frmDoiMatKhau1";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "frmDoiMatKhau1";
-            WindowState = FormWindowState.Maximized;
             Load += frmDoiMatKhau1_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);

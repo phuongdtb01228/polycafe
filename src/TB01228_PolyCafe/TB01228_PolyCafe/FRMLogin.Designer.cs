@@ -45,7 +45,7 @@
             pictureBox1.Image = GUI_PolyCafe.Properties.Resources.Screenshot_2025_05_16_082306;
             pictureBox1.Location = new Point(0, 2);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(398, 445);
+            pictureBox1.Size = new Size(547, 549);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 7;
             pictureBox1.TabStop = false;
@@ -53,9 +53,9 @@
             // button2
             // 
             button2.BackColor = SystemColors.GrayText;
-            button2.Location = new Point(460, 375);
+            button2.Location = new Point(592, 434);
             button2.Name = "button2";
-            button2.Size = new Size(332, 60);
+            button2.Size = new Size(332, 75);
             button2.TabIndex = 14;
             button2.Text = "Thoát";
             button2.UseVisualStyleBackColor = false;
@@ -64,9 +64,9 @@
             // button1
             // 
             button1.BackColor = SystemColors.GrayText;
-            button1.Location = new Point(460, 277);
+            button1.Location = new Point(592, 308);
             button1.Name = "button1";
-            button1.Size = new Size(332, 68);
+            button1.Size = new Size(332, 83);
             button1.TabIndex = 13;
             button1.Text = "Đăng Nhập";
             button1.UseVisualStyleBackColor = false;
@@ -75,7 +75,7 @@
             // rdbHienThiMatKhau
             // 
             rdbHienThiMatKhau.AutoSize = true;
-            rdbHienThiMatKhau.Location = new Point(638, 235);
+            rdbHienThiMatKhau.Location = new Point(812, 234);
             rdbHienThiMatKhau.Name = "rdbHienThiMatKhau";
             rdbHienThiMatKhau.Size = new Size(124, 19);
             rdbHienThiMatKhau.TabIndex = 12;
@@ -87,7 +87,7 @@
             // txtpassword
             // 
             txtpassword.BackColor = SystemColors.ScrollBar;
-            txtpassword.Location = new Point(550, 194);
+            txtpassword.Location = new Point(724, 193);
             txtpassword.Name = "txtpassword";
             txtpassword.PasswordChar = '*';
             txtpassword.Size = new Size(212, 23);
@@ -96,7 +96,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(421, 194);
+            label2.Location = new Point(595, 193);
             label2.Name = "label2";
             label2.Size = new Size(58, 15);
             label2.TabIndex = 10;
@@ -105,7 +105,7 @@
             // txtusername
             // 
             txtusername.BackColor = SystemColors.ScrollBar;
-            txtusername.Location = new Point(550, 120);
+            txtusername.Location = new Point(724, 119);
             txtusername.Name = "txtusername";
             txtusername.Size = new Size(212, 23);
             txtusername.TabIndex = 9;
@@ -113,7 +113,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(421, 120);
+            label1.Location = new Point(595, 119);
             label1.Name = "label1";
             label1.Size = new Size(67, 15);
             label1.TabIndex = 8;
@@ -123,7 +123,7 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 22F);
-            label3.Location = new Point(460, 27);
+            label3.Location = new Point(681, 31);
             label3.Name = "label3";
             label3.Size = new Size(169, 41);
             label3.TabIndex = 15;
@@ -135,7 +135,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             AutoSize = true;
             BackColor = SystemColors.ActiveCaption;
-            ClientSize = new Size(948, 467);
+            ClientSize = new Size(990, 553);
             Controls.Add(label3);
             Controls.Add(button2);
             Controls.Add(button1);
@@ -145,6 +145,8 @@
             Controls.Add(txtusername);
             Controls.Add(label1);
             Controls.Add(pictureBox1);
+            MaximumSize = new Size(1006, 592);
+            MinimumSize = new Size(1006, 592);
             Name = "FRMLogin";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Login";

@@ -123,5 +123,15 @@ namespace GUI_PolyCafe
             FRMNhanVien nhanVien = new FRMNhanVien();
             openChildForm(nhanVien);
         }
+
+        private void sảnPhẩmToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            openChildForm(new FRMSanPham());
+        }
+
+        private void loạiSảnPhẩmToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            openChildForm(new FRMLoaiSanPham());
+        }
     }
 }

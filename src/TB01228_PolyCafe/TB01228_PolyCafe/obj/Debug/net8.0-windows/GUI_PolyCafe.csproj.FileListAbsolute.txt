@@ -76,3 +76,5 @@ E:\DU_AN_C#\TB01228_PolyCafe\TB01228_PolyCafe\obj\Debug\net8.0-windows\ref\GUI_P
 E:\DU_AN_C#\TB01228_PolyCafe\TB01228_PolyCafe\obj\Debug\net8.0-windows\GUI_PolyCafe.frmDoiMatKhau1.resources
 E:\DU_AN_C#\TB01228_PolyCafe\TB01228_PolyCafe\obj\Debug\net8.0-windows\GUI_PolyCafe.FRMNhanVien.resources
 E:\DU_AN_C#\TB01228_PolyCafe\TB01228_PolyCafe\obj\Debug\net8.0-windows\GUI_PolyCafe.FRMTheLuuDong.resources
+E:\DU_AN_C#\TB01228_PolyCafe\TB01228_PolyCafe\obj\Debug\net8.0-windows\GUI_PolyCafe.FRMLoaiSanPham.resources
+E:\DU_AN_C#\TB01228_PolyCafe\TB01228_PolyCafe\obj\Debug\net8.0-windows\GUI_PolyCafe.FRMSanPham.resources

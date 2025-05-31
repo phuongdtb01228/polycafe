@@ -35,14 +35,14 @@
             label2 = new Label();
             txtChuSoHuu = new TextBox();
             label3 = new Label();
-            label4 = new Label();
             btnXoa = new Button();
             btnSua = new Button();
             btnLamMoi = new Button();
-            cbHoatDong = new CheckBox();
-            cbKhongHoatDong = new CheckBox();
             btnTimKiem = new Button();
             txtTimKiem = new TextBox();
+            label4 = new Label();
+            cbHoatDong = new CheckBox();
+            cbKhongHoatDong = new CheckBox();
             ((System.ComponentModel.ISupportInitialize)dgvTheLuuDong).BeginInit();
             SuspendLayout();
             // 
@@ -76,9 +76,9 @@
             // dgvTheLuuDong
             // 
             dgvTheLuuDong.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvTheLuuDong.Location = new Point(379, 104);
+            dgvTheLuuDong.Location = new Point(394, 115);
             dgvTheLuuDong.Name = "dgvTheLuuDong";
-            dgvTheLuuDong.Size = new Size(427, 343);
+            dgvTheLuuDong.Size = new Size(536, 343);
             dgvTheLuuDong.TabIndex = 3;
             dgvTheLuuDong.CellDoubleClick += dgvTheLuuDong_CellDoubleClick;
             // 
@@ -107,15 +107,6 @@
             label3.Size = new Size(71, 15);
             label3.TabIndex = 5;
             label3.Text = "Chủ Sỡ Hữu";
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Location = new Point(54, 235);
-            label4.Name = "label4";
-            label4.Size = new Size(63, 15);
-            label4.TabIndex = 7;
-            label4.Text = "Trạng Thái";
             // 
             // btnXoa
             // 
@@ -147,6 +138,32 @@
             btnLamMoi.UseVisualStyleBackColor = true;
             btnLamMoi.Click += btnLamMoi_Click;
             // 
+            // btnTimKiem
+            // 
+            btnTimKiem.Location = new Point(855, 68);
+            btnTimKiem.Name = "btnTimKiem";
+            btnTimKiem.Size = new Size(75, 23);
+            btnTimKiem.TabIndex = 14;
+            btnTimKiem.Text = "Tìm Kiếm";
+            btnTimKiem.UseVisualStyleBackColor = true;
+            btnTimKiem.Click += btnTimKiem_Click;
+            // 
+            // txtTimKiem
+            // 
+            txtTimKiem.Location = new Point(695, 68);
+            txtTimKiem.Name = "txtTimKiem";
+            txtTimKiem.Size = new Size(145, 23);
+            txtTimKiem.TabIndex = 15;
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Location = new Point(54, 235);
+            label4.Name = "label4";
+            label4.Size = new Size(63, 15);
+            label4.TabIndex = 7;
+            label4.Text = "Trạng Thái";
+            // 
             // cbHoatDong
             // 
             cbHoatDong.AutoSize = true;
@@ -167,27 +184,11 @@
             cbKhongHoatDong.Text = "Không Hoạt Động";
             cbKhongHoatDong.UseVisualStyleBackColor = true;
             // 
-            // btnTimKiem
-            // 
-            btnTimKiem.Location = new Point(706, 63);
-            btnTimKiem.Name = "btnTimKiem";
-            btnTimKiem.Size = new Size(75, 23);
-            btnTimKiem.TabIndex = 14;
-            btnTimKiem.Text = "Tìm Kiếm";
-            btnTimKiem.UseVisualStyleBackColor = true;
-            // 
-            // txtTimKiem
-            // 
-            txtTimKiem.Location = new Point(546, 63);
-            txtTimKiem.Name = "txtTimKiem";
-            txtTimKiem.Size = new Size(145, 23);
-            txtTimKiem.TabIndex = 15;
-            // 
             // FRMTheLuuDong
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(818, 450);
+            ClientSize = new Size(990, 553);
             Controls.Add(txtTimKiem);
             Controls.Add(btnTimKiem);
             Controls.Add(cbKhongHoatDong);
@@ -203,6 +204,8 @@
             Controls.Add(btnThem);
             Controls.Add(txtMaThe);
             Controls.Add(label1);
+            MaximumSize = new Size(1006, 592);
+            MinimumSize = new Size(1006, 592);
             Name = "FRMTheLuuDong";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "FRMTheLuuDong";
@@ -221,13 +224,13 @@
         private Label label2;
         private TextBox txtChuSoHuu;
         private Label label3;
-        private Label label4;
         private Button btnXoa;
         private Button btnSua;
         private Button btnLamMoi;
-        private CheckBox cbHoatDong;
-        private CheckBox cbKhongHoatDong;
         private Button btnTimKiem;
         private TextBox txtTimKiem;
+        private Label label4;
+        private CheckBox cbHoatDong;
+        private CheckBox cbKhongHoatDong;
     }
 }

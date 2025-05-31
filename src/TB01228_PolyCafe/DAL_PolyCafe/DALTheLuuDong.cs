@@ -54,7 +54,7 @@ namespace DAL_PolyCafe
         public void insert(TheLuuDong tld)
         {
             string sql = "INSERT INTO TheLuuDong (MaThe, ChuSoHuu, TrangThai) " +
-                         "VALUES (@0, @1, @2)";
+                        "VALUES (@0, @1, @2)";
 
             List<object> thamSo = new List<object>();
             thamSo.Add(tld.MaThe);

@@ -38,16 +38,16 @@
             pictureBox1.Image = Properties.Resources.Screenshot_2025_05_13_144544;
             pictureBox1.Location = new Point(1, 1);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(921, 405);
+            pictureBox1.Size = new Size(985, 504);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
             // 
             // progressBar1
             // 
-            progressBar1.Location = new Point(1, 412);
+            progressBar1.Location = new Point(1, 511);
             progressBar1.Name = "progressBar1";
-            progressBar1.Size = new Size(921, 43);
+            progressBar1.Size = new Size(985, 40);
             progressBar1.TabIndex = 1;
             progressBar1.Click += progressBar1_Click;
             // 
@@ -55,9 +55,11 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(934, 467);
+            ClientSize = new Size(990, 553);
             Controls.Add(progressBar1);
             Controls.Add(pictureBox1);
+            MaximumSize = new Size(1006, 592);
+            MinimumSize = new Size(1006, 592);
             Name = "FRMWelcome";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "FRMWelcome";

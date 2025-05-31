@@ -44,7 +44,7 @@
             btnXoa = new Button();
             btnSua = new Button();
             btnLamMoi = new Button();
-            tbTimKiem = new TextBox();
+            txtTimKiem = new TextBox();
             btnTimKiem = new Button();
             label8 = new Label();
             pnTrangThai = new Panel();
@@ -74,14 +74,14 @@
             txtMaNhanVien.Location = new Point(120, 86);
             txtMaNhanVien.Name = "txtMaNhanVien";
             txtMaNhanVien.ReadOnly = true;
-            txtMaNhanVien.Size = new Size(114, 23);
+            txtMaNhanVien.Size = new Size(209, 23);
             txtMaNhanVien.TabIndex = 2;
             // 
             // txtHoTen
             // 
             txtHoTen.Location = new Point(120, 137);
             txtHoTen.Name = "txtHoTen";
-            txtHoTen.Size = new Size(114, 23);
+            txtHoTen.Size = new Size(209, 23);
             txtHoTen.TabIndex = 4;
             // 
             // label3
@@ -110,7 +110,7 @@
             // 
             txtEmail.Location = new Point(120, 187);
             txtEmail.Name = "txtEmail";
-            txtEmail.Size = new Size(114, 23);
+            txtEmail.Size = new Size(209, 23);
             txtEmail.TabIndex = 6;
             // 
             // label5
@@ -128,7 +128,7 @@
             // 
             txtXacNhanMatKhau.Location = new Point(126, 290);
             txtXacNhanMatKhau.Name = "txtXacNhanMatKhau";
-            txtXacNhanMatKhau.Size = new Size(108, 23);
+            txtXacNhanMatKhau.Size = new Size(203, 23);
             txtXacNhanMatKhau.TabIndex = 12;
             // 
             // label6
@@ -146,7 +146,7 @@
             // 
             txtMatKhau.Location = new Point(120, 236);
             txtMatKhau.Name = "txtMatKhau";
-            txtMatKhau.Size = new Size(114, 23);
+            txtMatKhau.Size = new Size(209, 23);
             txtMatKhau.TabIndex = 10;
             // 
             // label7
@@ -163,9 +163,9 @@
             // DGVNhanVien
             // 
             DGVNhanVien.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            DGVNhanVien.Location = new Point(240, 86);
+            DGVNhanVien.Location = new Point(353, 94);
             DGVNhanVien.Name = "DGVNhanVien";
-            DGVNhanVien.Size = new Size(558, 227);
+            DGVNhanVien.Size = new Size(635, 227);
             DGVNhanVien.TabIndex = 15;
             DGVNhanVien.CellContentClick += DGVNhanVien_CellContentClick;
             DGVNhanVien.CellDoubleClick += DGVNhanVien_CellDoubleClick;
@@ -174,7 +174,7 @@
             // 
             btnThem.BackgroundImage = Properties.Resources.Screenshot_2025_05_22_132550;
             btnThem.ForeColor = SystemColors.ButtonFace;
-            btnThem.Location = new Point(337, 328);
+            btnThem.Location = new Point(459, 377);
             btnThem.Name = "btnThem";
             btnThem.Size = new Size(190, 53);
             btnThem.TabIndex = 16;
@@ -186,7 +186,7 @@
             // 
             btnXoa.BackgroundImage = Properties.Resources.Screenshot_2025_05_22_132550;
             btnXoa.ForeColor = SystemColors.ButtonFace;
-            btnXoa.Location = new Point(337, 405);
+            btnXoa.Location = new Point(459, 454);
             btnXoa.Name = "btnXoa";
             btnXoa.Size = new Size(190, 53);
             btnXoa.TabIndex = 17;
@@ -198,7 +198,7 @@
             // 
             btnSua.BackgroundImage = Properties.Resources.Screenshot_2025_05_22_132550;
             btnSua.ForeColor = SystemColors.ButtonFace;
-            btnSua.Location = new Point(608, 327);
+            btnSua.Location = new Point(730, 376);
             btnSua.Name = "btnSua";
             btnSua.Size = new Size(190, 53);
             btnSua.TabIndex = 18;
@@ -210,7 +210,7 @@
             // 
             btnLamMoi.BackgroundImage = Properties.Resources.Screenshot_2025_05_22_132550;
             btnLamMoi.ForeColor = SystemColors.ButtonFace;
-            btnLamMoi.Location = new Point(608, 402);
+            btnLamMoi.Location = new Point(730, 451);
             btnLamMoi.Name = "btnLamMoi";
             btnLamMoi.Size = new Size(190, 53);
             btnLamMoi.TabIndex = 19;
@@ -218,24 +218,25 @@
             btnLamMoi.UseVisualStyleBackColor = true;
             btnLamMoi.Click += btnLamMoi_Click;
             // 
-            // tbTimKiem
+            // txtTimKiem
             // 
-            tbTimKiem.Location = new Point(425, 48);
-            tbTimKiem.Name = "tbTimKiem";
-            tbTimKiem.Size = new Size(173, 23);
-            tbTimKiem.TabIndex = 20;
-            tbTimKiem.TextChanged += tbTimKiem_TextChanged;
+            txtTimKiem.Location = new Point(540, 56);
+            txtTimKiem.Name = "txtTimKiem";
+            txtTimKiem.Size = new Size(173, 23);
+            txtTimKiem.TabIndex = 20;
+            txtTimKiem.TextChanged += tbTimKiem_TextChanged;
             // 
             // btnTimKiem
             // 
             btnTimKiem.BackgroundImage = Properties.Resources.Screenshot_2025_05_22_132550;
             btnTimKiem.ForeColor = SystemColors.ButtonHighlight;
-            btnTimKiem.Location = new Point(608, 32);
+            btnTimKiem.Location = new Point(730, 40);
             btnTimKiem.Name = "btnTimKiem";
             btnTimKiem.Size = new Size(190, 50);
             btnTimKiem.TabIndex = 21;
             btnTimKiem.Text = "Tìm Kiếm";
             btnTimKiem.UseVisualStyleBackColor = true;
+            btnTimKiem.Click += btnTimKiem_Click;
             // 
             // label8
             // 
@@ -253,9 +254,9 @@
             pnTrangThai.Controls.Add(cbKhongHoatDong);
             pnTrangThai.Controls.Add(cbHoatDong);
             pnTrangThai.Controls.Add(label8);
-            pnTrangThai.Location = new Point(5, 345);
+            pnTrangThai.Location = new Point(15, 377);
             pnTrangThai.Name = "pnTrangThai";
-            pnTrangThai.Size = new Size(307, 28);
+            pnTrangThai.Size = new Size(324, 28);
             pnTrangThai.TabIndex = 25;
             pnTrangThai.Paint += panel1_Paint;
             // 
@@ -264,7 +265,7 @@
             cbKhongHoatDong.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             cbKhongHoatDong.AutoSize = true;
             cbKhongHoatDong.ForeColor = SystemColors.ButtonHighlight;
-            cbKhongHoatDong.Location = new Point(183, 5);
+            cbKhongHoatDong.Location = new Point(200, 5);
             cbKhongHoatDong.Name = "cbKhongHoatDong";
             cbKhongHoatDong.Size = new Size(122, 19);
             cbKhongHoatDong.TabIndex = 24;
@@ -289,9 +290,9 @@
             pnVaiTro.Controls.Add(cbQuanLy);
             pnVaiTro.Controls.Add(cbNhanVien);
             pnVaiTro.Controls.Add(label4);
-            pnVaiTro.Location = new Point(6, 420);
+            pnVaiTro.Location = new Point(16, 452);
             pnVaiTro.Name = "pnVaiTro";
-            pnVaiTro.Size = new Size(307, 28);
+            pnVaiTro.Size = new Size(321, 28);
             pnVaiTro.TabIndex = 26;
             // 
             // cbQuanLy
@@ -299,7 +300,7 @@
             cbQuanLy.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             cbQuanLy.AutoSize = true;
             cbQuanLy.ForeColor = SystemColors.ButtonHighlight;
-            cbQuanLy.Location = new Point(182, 5);
+            cbQuanLy.Location = new Point(202, 5);
             cbQuanLy.Name = "cbQuanLy";
             cbQuanLy.Size = new Size(69, 19);
             cbQuanLy.TabIndex = 25;
@@ -325,11 +326,11 @@
             AutoSize = true;
             BackgroundImage = Properties.Resources.Screenshot_2025_05_22_133704;
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(878, 490);
+            ClientSize = new Size(990, 553);
             Controls.Add(pnVaiTro);
             Controls.Add(pnTrangThai);
             Controls.Add(btnTimKiem);
-            Controls.Add(tbTimKiem);
+            Controls.Add(txtTimKiem);
             Controls.Add(btnLamMoi);
             Controls.Add(btnSua);
             Controls.Add(btnXoa);
@@ -346,10 +347,11 @@
             Controls.Add(txtMaNhanVien);
             Controls.Add(label2);
             DoubleBuffered = true;
+            MaximumSize = new Size(1006, 592);
+            MinimumSize = new Size(1006, 592);
             Name = "FRMNhanVien";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "FRMNhanVien";
-            WindowState = FormWindowState.Maximized;
             Load += FRMNhanVien_Load;
             ((System.ComponentModel.ISupportInitialize)DGVNhanVien).EndInit();
             pnTrangThai.ResumeLayout(false);
@@ -377,7 +379,7 @@
         private Button btnXoa;
         private Button btnSua;
         private Button btnLamMoi;
-        private TextBox tbTimKiem;
+        private TextBox txtTimKiem;
         private Button btnTimKiem;
         private Label label8;
         private Panel pnTrangThai;

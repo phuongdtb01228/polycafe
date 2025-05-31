@@ -63,9 +63,6 @@ namespace GUI_PolyCafe
                     return;
                 }
 
-
-
-
                 TheLuuDong tld = new TheLuuDong
                 {
                     ChuSoHuu = chuSoHuu,
@@ -75,7 +72,7 @@ namespace GUI_PolyCafe
 
                 // Bước 4: Thêm vào CSDL
                 busTheLuuDong.InsertTheLuuDong(tld);
-                MessageBox.Show("Thêm nhân viên thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Thêm Thẻ Lưu Động", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 ClearForm(); // Xóa form sau khi thêm
                 LoadTheLuuDong();
@@ -178,5 +175,36 @@ namespace GUI_PolyCafe
         {
             LoadTheLuuDong();
         }
+
+        private void SearchInAllCells(string keyword)
+        {
+            foreach (DataGridViewRow row in dgvTheLuuDong.Rows)
+            {
+                foreach (DataGridViewCell cell in row.Cells)
+                {
+                    if (cell.Value != null && cell.Value.ToString().ToLower().Contains(keyword.ToLower()))
+                    {
+
+                        row.Selected = true;
+                        break;
+                    }
+                    else
+                    {
+                        row.Selected = false;
+                    }
+                }
+            }
+        }
+
+        private void btnTimKiem_Click(object sender, EventArgs e)
+        {
+            string keyWord = txtTimKiem.Text;
+            if (!string.IsNullOrWhiteSpace(keyWord))
+            {
+                SearchInAllCells(keyWord);
+            }
+            txtTimKiem.Clear();
+        }
     }
-}
+    }
+
