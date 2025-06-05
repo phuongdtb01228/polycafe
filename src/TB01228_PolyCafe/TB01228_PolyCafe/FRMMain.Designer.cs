@@ -38,6 +38,7 @@
             menustripTheLuuDong = new ToolStripMenuItem();
             sảnPhẩmToolStripMenuItem = new ToolStripMenuItem();
             loạiSảnPhẩmToolStripMenuItem = new ToolStripMenuItem();
+            phiếuBánHàngToolStripMenuItem = new ToolStripMenuItem();
             msThongKe = new ToolStripMenuItem();
             msHoTro = new ToolStripMenuItem();
             msNhanVien = new ToolStripMenuItem();
@@ -96,7 +97,7 @@
             // 
             // msQuanLy
             // 
-            msQuanLy.DropDownItems.AddRange(new ToolStripItem[] { menustripTheLuuDong, sảnPhẩmToolStripMenuItem, loạiSảnPhẩmToolStripMenuItem });
+            msQuanLy.DropDownItems.AddRange(new ToolStripItem[] { menustripTheLuuDong, sảnPhẩmToolStripMenuItem, loạiSảnPhẩmToolStripMenuItem, phiếuBánHàngToolStripMenuItem });
             msQuanLy.Image = Properties.Resources.Screenshot_2025_05_16_082306;
             msQuanLy.Name = "msQuanLy";
             msQuanLy.Size = new Size(78, 20);
@@ -122,6 +123,13 @@
             loạiSảnPhẩmToolStripMenuItem.Size = new Size(180, 22);
             loạiSảnPhẩmToolStripMenuItem.Text = "Loại Sản Phẩm";
             loạiSảnPhẩmToolStripMenuItem.Click += loạiSảnPhẩmToolStripMenuItem_Click;
+            // 
+            // phiếuBánHàngToolStripMenuItem
+            // 
+            phiếuBánHàngToolStripMenuItem.Name = "phiếuBánHàngToolStripMenuItem";
+            phiếuBánHàngToolStripMenuItem.Size = new Size(180, 22);
+            phiếuBánHàngToolStripMenuItem.Text = "Phiếu Bán Hàng";
+            phiếuBánHàngToolStripMenuItem.Click += phiếuBánHàngToolStripMenuItem_Click;
             // 
             // msThongKe
             // 
@@ -180,6 +188,7 @@
             pnMain1.Name = "pnMain1";
             pnMain1.Size = new Size(1006, 592);
             pnMain1.TabIndex = 3;
+            pnMain1.Paint += pnMain1_Paint;
             // 
             // FRMMain
             // 
@@ -224,5 +233,6 @@
         private Panel pnMain1;
         private ToolStripMenuItem sảnPhẩmToolStripMenuItem;
         private ToolStripMenuItem loạiSảnPhẩmToolStripMenuItem;
+        private ToolStripMenuItem phiếuBánHàngToolStripMenuItem;
     }
 }

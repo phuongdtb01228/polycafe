@@ -70,6 +70,8 @@ namespace GUI_PolyCafe
                     return;
                 }
 
+                string savedPath = ImageUtil.SaveImage(pbHinhAnh.Image, "Uploads/SanPham");
+
                 // Tạo đối tượng sản phẩm
                 SanPham sp = new SanPham
                 {
@@ -77,7 +79,7 @@ namespace GUI_PolyCafe
                     DonGia = donGia,
                     MaLoai = maLoai,
                     TrangThai = trangThai,
-                    HinhAnh = ""
+                    HinhAnh = savedPath,
                 };
 
                 // Thêm sản phẩm vào cơ sở dữ liệu
@@ -110,6 +112,9 @@ namespace GUI_PolyCafe
                 txtTenSanPham.Text = row.Cells["TenSanPham"].Value.ToString();
                 txtDonGia.Text = row.Cells["DonGia"].Value.ToString();
                 txtLoaiSanPham.Text = row.Cells["MaLoai"].Value.ToString();
+                string path = Path.Combine(Application.StartupPath, row.Cells["HinhAnh"].Value.ToString());
+                pbHinhAnh.Image = ImageUtil.LoadImage(path);
+                pbHinhAnh.Tag = path;
                 if (Convert.ToBoolean(row.Cells["TrangThai"].Value))
                 {
                     cbHoatDong.Checked = true;
@@ -118,6 +123,7 @@ namespace GUI_PolyCafe
                 {
                     cbKhongHoatDong.Checked = true;
                 }
+
             }
         }
 
@@ -203,6 +209,8 @@ namespace GUI_PolyCafe
 
         private void btnLamMoi_Click(object sender, EventArgs e)
         {
+            ClearForm();
+
             LoadSanPham();
         }
 
@@ -239,6 +247,17 @@ namespace GUI_PolyCafe
         private void txtTimKiem_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnTimAnh_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            openFileDialog.Filter = "Image Files|*.jpg;*.jpeg;*.png;*.bmp;*.gif";
+
+            if (openFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                pbHinhAnh.Image = Image.FromFile(openFileDialog.FileName);
+            }
         }
     }
 }

@@ -133,5 +133,15 @@ namespace GUI_PolyCafe
         {
             openChildForm(new FRMLoaiSanPham());
         }
+
+        private void phiếuBánHàngToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            openChildForm(new FRMPhieuBanHang());
+        }
+
+        private void pnMain1_Paint(object sender, PaintEventArgs e)
+        {
+            openChildForm(new FRMPhieuBanHang());
+        }
     }
 }

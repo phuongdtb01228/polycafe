@@ -228,7 +228,8 @@
             // 
             pbHinhAnh.Location = new Point(448, 399);
             pbHinhAnh.Name = "pbHinhAnh";
-            pbHinhAnh.Size = new Size(292, 87);
+            pbHinhAnh.Size = new Size(292, 94);
+            pbHinhAnh.SizeMode = PictureBoxSizeMode.StretchImage;
             pbHinhAnh.TabIndex = 35;
             pbHinhAnh.TabStop = false;
             // 
@@ -240,6 +241,7 @@
             btnTimAnh.TabIndex = 36;
             btnTimAnh.Text = "Tìm Ảnh";
             btnTimAnh.UseVisualStyleBackColor = true;
+            btnTimAnh.Click += btnTimAnh_Click;
             // 
             // FRMSanPham
             // 
