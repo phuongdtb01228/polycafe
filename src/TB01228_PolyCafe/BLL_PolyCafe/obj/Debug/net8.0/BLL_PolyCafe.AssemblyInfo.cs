@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BLL_PolyCafe")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ff5b9762ee542f76d8ba98d9785d3ee469e270e2")]
 [assembly: System.Reflection.AssemblyProductAttribute("BLL_PolyCafe")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BLL_PolyCafe")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

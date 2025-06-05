@@ -3,6 +3,18 @@
   "WorkspaceRootPath": "E:\\DU_AN_C#\\TB01228_PolyCafe\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{434201A1-7BCC-4510-A83D-045DA9004303}|TB01228_PolyCafe\\GUI_PolyCafe.csproj|e:\\du_an_c#\\tb01228_polycafe\\tb01228_polycafe\\frmphieubanhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{434201A1-7BCC-4510-A83D-045DA9004303}|TB01228_PolyCafe\\GUI_PolyCafe.csproj|solutionrelative:tb01228_polycafe\\frmphieubanhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{434201A1-7BCC-4510-A83D-045DA9004303}|TB01228_PolyCafe\\GUI_PolyCafe.csproj|E:\\DU_AN_C#\\TB01228_PolyCafe\\tb01228_polycafe\\frmphieubanhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{434201A1-7BCC-4510-A83D-045DA9004303}|TB01228_PolyCafe\\GUI_PolyCafe.csproj|solutionrelative:tb01228_polycafe\\frmphieubanhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{434201A1-7BCC-4510-A83D-045DA9004303}|TB01228_PolyCafe\\GUI_PolyCafe.csproj|E:\\DU_AN_C#\\TB01228_PolyCafe\\tb01228_polycafe\\frmchitietphieu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{434201A1-7BCC-4510-A83D-045DA9004303}|TB01228_PolyCafe\\GUI_PolyCafe.csproj|solutionrelative:tb01228_polycafe\\frmchitietphieu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{434201A1-7BCC-4510-A83D-045DA9004303}|TB01228_PolyCafe\\GUI_PolyCafe.csproj|e:\\du_an_c#\\tb01228_polycafe\\tb01228_polycafe\\frmchitietphieu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{434201A1-7BCC-4510-A83D-045DA9004303}|TB01228_PolyCafe\\GUI_PolyCafe.csproj|solutionrelative:tb01228_polycafe\\frmchitietphieu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -25,18 +37,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{434201A1-7BCC-4510-A83D-045DA9004303}|TB01228_PolyCafe\\GUI_PolyCafe.csproj|E:\\DU_AN_C#\\TB01228_PolyCafe\\tb01228_polycafe\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{434201A1-7BCC-4510-A83D-045DA9004303}|TB01228_PolyCafe\\GUI_PolyCafe.csproj|solutionrelative:tb01228_polycafe\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{434201A1-7BCC-4510-A83D-045DA9004303}|TB01228_PolyCafe\\GUI_PolyCafe.csproj|E:\\DU_AN_C#\\TB01228_PolyCafe\\tb01228_polycafe\\frmchitietphieu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{434201A1-7BCC-4510-A83D-045DA9004303}|TB01228_PolyCafe\\GUI_PolyCafe.csproj|solutionrelative:tb01228_polycafe\\frmchitietphieu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{434201A1-7BCC-4510-A83D-045DA9004303}|TB01228_PolyCafe\\GUI_PolyCafe.csproj|E:\\DU_AN_C#\\TB01228_PolyCafe\\tb01228_polycafe\\frmphieubanhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{434201A1-7BCC-4510-A83D-045DA9004303}|TB01228_PolyCafe\\GUI_PolyCafe.csproj|solutionrelative:tb01228_polycafe\\frmphieubanhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{434201A1-7BCC-4510-A83D-045DA9004303}|TB01228_PolyCafe\\GUI_PolyCafe.csproj|e:\\du_an_c#\\tb01228_polycafe\\tb01228_polycafe\\frmphieubanhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{434201A1-7BCC-4510-A83D-045DA9004303}|TB01228_PolyCafe\\GUI_PolyCafe.csproj|solutionrelative:tb01228_polycafe\\frmphieubanhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{434201A1-7BCC-4510-A83D-045DA9004303}|TB01228_PolyCafe\\GUI_PolyCafe.csproj|e:\\du_an_c#\\tb01228_polycafe\\tb01228_polycafe\\frmphieubanhang.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -158,45 +158,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "BUSChiTietPhieu.cs",
-              "DocumentMoniker": "E:\\DU_AN_C#\\TB01228_PolyCafe\\BLL_PolyCafe\\BUSChiTietPhieu.cs",
-              "RelativeDocumentMoniker": "BLL_PolyCafe\\BUSChiTietPhieu.cs",
-              "ToolTip": "E:\\DU_AN_C#\\TB01228_PolyCafe\\BLL_PolyCafe\\BUSChiTietPhieu.cs",
-              "RelativeToolTip": "BLL_PolyCafe\\BUSChiTietPhieu.cs",
-              "ViewState": "AgIAAB0AAAAAAAAAAAAWwCsAAAA0AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-05T10:22:05.004Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "FRMMain.cs [Design]",
-              "DocumentMoniker": "E:\\DU_AN_C#\\TB01228_PolyCafe\\TB01228_PolyCafe\\FRMMain.cs",
-              "RelativeDocumentMoniker": "TB01228_PolyCafe\\FRMMain.cs",
-              "ToolTip": "E:\\DU_AN_C#\\TB01228_PolyCafe\\TB01228_PolyCafe\\FRMMain.cs [Design]",
-              "RelativeToolTip": "TB01228_PolyCafe\\FRMMain.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-29T06:19:06.559Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ChiTietPhieu.cs",
-              "DocumentMoniker": "E:\\DU_AN_C#\\TB01228_PolyCafe\\DTO_PolyCafe\\ChiTietPhieu.cs",
-              "RelativeDocumentMoniker": "DTO_PolyCafe\\ChiTietPhieu.cs",
-              "ToolTip": "E:\\DU_AN_C#\\TB01228_PolyCafe\\DTO_PolyCafe\\ChiTietPhieu.cs",
-              "RelativeToolTip": "DTO_PolyCafe\\ChiTietPhieu.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAsAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-05T10:21:00.683Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "DALChiTietPhieu.cs",
               "DocumentMoniker": "E:\\DU_AN_C#\\TB01228_PolyCafe\\DAL_PolyCafe\\DALChiTietPhieu.cs",
               "RelativeDocumentMoniker": "DAL_PolyCafe\\DALChiTietPhieu.cs",
@@ -209,12 +171,12 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "FRMChiTietPhieu.cs",
               "DocumentMoniker": "E:\\DU_AN_C#\\TB01228_PolyCafe\\TB01228_PolyCafe\\FRMChiTietPhieu.cs",
               "RelativeDocumentMoniker": "TB01228_PolyCafe\\FRMChiTietPhieu.cs",
-              "ToolTip": "E:\\DU_AN_C#\\TB01228_PolyCafe\\TB01228_PolyCafe\\FRMChiTietPhieu.cs*",
-              "RelativeToolTip": "TB01228_PolyCafe\\FRMChiTietPhieu.cs*",
+              "ToolTip": "E:\\DU_AN_C#\\TB01228_PolyCafe\\TB01228_PolyCafe\\FRMChiTietPhieu.cs",
+              "RelativeToolTip": "TB01228_PolyCafe\\FRMChiTietPhieu.cs",
               "ViewState": "AgIAADUAAAAAAAAAAAA1wEQAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-05T10:20:04.879Z",
@@ -222,18 +184,82 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 2,
+              "Title": "FRMChiTietPhieu.cs [Design]",
+              "DocumentMoniker": "E:\\DU_AN_C#\\TB01228_PolyCafe\\TB01228_PolyCafe\\FRMChiTietPhieu.cs",
+              "RelativeDocumentMoniker": "TB01228_PolyCafe\\FRMChiTietPhieu.cs",
+              "ToolTip": "E:\\DU_AN_C#\\TB01228_PolyCafe\\TB01228_PolyCafe\\FRMChiTietPhieu.cs [Design]",
+              "RelativeToolTip": "TB01228_PolyCafe\\FRMChiTietPhieu.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-05T07:51:18.958Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "FRMPhieuBanHang.cs [Design]",
               "DocumentMoniker": "E:\\DU_AN_C#\\TB01228_PolyCafe\\TB01228_PolyCafe\\FRMPhieuBanHang.cs",
               "RelativeDocumentMoniker": "TB01228_PolyCafe\\FRMPhieuBanHang.cs",
               "ToolTip": "E:\\DU_AN_C#\\TB01228_PolyCafe\\TB01228_PolyCafe\\FRMPhieuBanHang.cs [Design]",
               "RelativeToolTip": "TB01228_PolyCafe\\FRMPhieuBanHang.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-05T07:01:23.213Z"
+              "WhenOpened": "2025-06-05T07:01:23.213Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FRMPhieuBanHang.cs",
+              "DocumentMoniker": "E:\\DU_AN_C#\\TB01228_PolyCafe\\TB01228_PolyCafe\\FRMPhieuBanHang.cs",
+              "RelativeDocumentMoniker": "TB01228_PolyCafe\\FRMPhieuBanHang.cs",
+              "ToolTip": "E:\\DU_AN_C#\\TB01228_PolyCafe\\TB01228_PolyCafe\\FRMPhieuBanHang.cs",
+              "RelativeToolTip": "TB01228_PolyCafe\\FRMPhieuBanHang.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAAAYwG0AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-05T07:29:02.846Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
+              "Title": "ChiTietPhieu.cs",
+              "DocumentMoniker": "E:\\DU_AN_C#\\TB01228_PolyCafe\\DTO_PolyCafe\\ChiTietPhieu.cs",
+              "RelativeDocumentMoniker": "DTO_PolyCafe\\ChiTietPhieu.cs",
+              "ToolTip": "E:\\DU_AN_C#\\TB01228_PolyCafe\\DTO_PolyCafe\\ChiTietPhieu.cs",
+              "RelativeToolTip": "DTO_PolyCafe\\ChiTietPhieu.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAsAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-05T10:21:00.683Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "FRMMain.cs [Design]",
+              "DocumentMoniker": "E:\\DU_AN_C#\\TB01228_PolyCafe\\TB01228_PolyCafe\\FRMMain.cs",
+              "RelativeDocumentMoniker": "TB01228_PolyCafe\\FRMMain.cs",
+              "ToolTip": "E:\\DU_AN_C#\\TB01228_PolyCafe\\TB01228_PolyCafe\\FRMMain.cs [Design]",
+              "RelativeToolTip": "TB01228_PolyCafe\\FRMMain.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-29T06:19:06.559Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "BUSChiTietPhieu.cs",
+              "DocumentMoniker": "E:\\DU_AN_C#\\TB01228_PolyCafe\\BLL_PolyCafe\\BUSChiTietPhieu.cs",
+              "RelativeDocumentMoniker": "BLL_PolyCafe\\BUSChiTietPhieu.cs",
+              "ToolTip": "E:\\DU_AN_C#\\TB01228_PolyCafe\\BLL_PolyCafe\\BUSChiTietPhieu.cs",
+              "RelativeToolTip": "BLL_PolyCafe\\BUSChiTietPhieu.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAWwCsAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-05T10:22:05.004Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "FRMMain.cs",
               "DocumentMoniker": "E:\\DU_AN_C#\\TB01228_PolyCafe\\TB01228_PolyCafe\\FRMMain.cs",
               "RelativeDocumentMoniker": "TB01228_PolyCafe\\FRMMain.cs",
@@ -246,31 +272,6 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "FRMChiTietPhieu.cs [Design]",
-              "DocumentMoniker": "E:\\DU_AN_C#\\TB01228_PolyCafe\\TB01228_PolyCafe\\FRMChiTietPhieu.cs",
-              "RelativeDocumentMoniker": "TB01228_PolyCafe\\FRMChiTietPhieu.cs",
-              "ToolTip": "E:\\DU_AN_C#\\TB01228_PolyCafe\\TB01228_PolyCafe\\FRMChiTietPhieu.cs [Design]*",
-              "RelativeToolTip": "TB01228_PolyCafe\\FRMChiTietPhieu.cs [Design]*",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-05T07:51:18.958Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "FRMPhieuBanHang.cs",
-              "DocumentMoniker": "E:\\DU_AN_C#\\TB01228_PolyCafe\\TB01228_PolyCafe\\FRMPhieuBanHang.cs",
-              "RelativeDocumentMoniker": "TB01228_PolyCafe\\FRMPhieuBanHang.cs",
-              "ToolTip": "E:\\DU_AN_C#\\TB01228_PolyCafe\\TB01228_PolyCafe\\FRMPhieuBanHang.cs",
-              "RelativeToolTip": "TB01228_PolyCafe\\FRMPhieuBanHang.cs",
-              "ViewState": "AgIAAF8AAAAAAAAAAAAswHAAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-05T07:29:02.846Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 9,
               "Title": "FRMPhieuBanHang.Designer.cs",
               "DocumentMoniker": "E:\\DU_AN_C#\\TB01228_PolyCafe\\TB01228_PolyCafe\\FRMPhieuBanHang.Designer.cs",
@@ -279,7 +280,8 @@
               "RelativeToolTip": "TB01228_PolyCafe\\FRMPhieuBanHang.Designer.cs",
               "ViewState": "AgIAAAoAAAAAAAAAAAAswGcBAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-05T10:27:41.76Z"
+              "WhenOpened": "2025-06-05T10:27:41.76Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
