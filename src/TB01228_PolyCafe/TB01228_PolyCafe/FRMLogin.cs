@@ -28,7 +28,7 @@ namespace TB01228_PolyCafe
             string username = txtusername.Text;
             string password = txtpassword.Text;
             //Làm xong cần sửa lại trong ngoặc "" thành username, password
-            NhanVien nv = busNhanVien.DangNhap("hoa.nguyen@cafe.com", "Phuong1");
+            NhanVien nv = busNhanVien.DangNhap("phuongdtb01228@gmail.com", "123");
             //Làm xong cần sửa lại trong ngoặc "" thành username, password
             if (nv == null)
             {

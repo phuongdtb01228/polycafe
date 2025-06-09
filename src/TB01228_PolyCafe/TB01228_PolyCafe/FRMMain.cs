@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DTO_PolyCafe;
+using TB01228_PolyCafe;
 using UTIL_PolyCafe;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
@@ -58,6 +60,9 @@ namespace GUI_PolyCafe
         private void menustripTTTK_Click(object sender, EventArgs e)
         {
             //load dữ liệu lên
+            NhanVien nv = AuthUtil.user;
+            FRMThongTinTaiKhoan frm = new FRMThongTinTaiKhoan(nv);
+            openChildForm(frm);
 
         }
 
@@ -141,7 +146,49 @@ namespace GUI_PolyCafe
 
         private void pnMain1_Paint(object sender, PaintEventArgs e)
         {
-            openChildForm(new FRMPhieuBanHang());
+            openChildForm(new logomain());
+        }
+
+        private void msThongKe_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void thốngKêTheoLoạiSPToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            openChildForm(new FRMThongKeLSP());
+        }
+
+        private void thốngKêTToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            openChildForm(new FRMThongKeTheoNV());
+        }
+
+        private void menustripDangXuat_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Bạn có chắc chắn muốn đăng xuất?", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (result == DialogResult.Yes)
+            {
+                // Ẩn form main
+                this.Hide();
+
+                // Hiển thị lại form đăng nhập
+                FRMLogin frmDangNhap = new FRMLogin();
+                frmDangNhap.Show();
+
+                // Đóng form main khi form đăng nhập đóng (nếu muốn thoát hẳn app)
+                this.Close();
+            }
+        }
+
+        private void liênHệColdLineToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            openChildForm(new FRMHoTro());
+        }
+
+        private void trangChủToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            openChildForm(new logomain());
         }
     }
 }

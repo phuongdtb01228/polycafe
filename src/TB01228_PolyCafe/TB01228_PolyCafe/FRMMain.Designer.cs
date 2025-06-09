@@ -40,8 +40,12 @@
             loạiSảnPhẩmToolStripMenuItem = new ToolStripMenuItem();
             phiếuBánHàngToolStripMenuItem = new ToolStripMenuItem();
             msThongKe = new ToolStripMenuItem();
-            msHoTro = new ToolStripMenuItem();
+            thốngKêTheoLoạiSPToolStripMenuItem = new ToolStripMenuItem();
+            thốngKêTToolStripMenuItem = new ToolStripMenuItem();
             msNhanVien = new ToolStripMenuItem();
+            msHoTro = new ToolStripMenuItem();
+            liênHệColdLineToolStripMenuItem = new ToolStripMenuItem();
+            trangChủToolStripMenuItem = new ToolStripMenuItem();
             pnMain = new Panel();
             statusStrip1 = new StatusStrip();
             toolStripStatusLabel1 = new ToolStripStatusLabel();
@@ -53,7 +57,7 @@
             // menuStrip1
             // 
             menuStrip1.BackColor = SystemColors.ControlDarkDark;
-            menuStrip1.Items.AddRange(new ToolStripItem[] { msTK, msQuanLy, msThongKe, msHoTro, msNhanVien });
+            menuStrip1.Items.AddRange(new ToolStripItem[] { trangChủToolStripMenuItem, msTK, msQuanLy, msThongKe, msNhanVien, msHoTro });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
             menuStrip1.Size = new Size(1006, 24);
@@ -87,6 +91,7 @@
             menustripDangXuat.Name = "menustripDangXuat";
             menustripDangXuat.Size = new Size(184, 22);
             menustripDangXuat.Text = "Đăng Xuất";
+            menustripDangXuat.Click += menustripDangXuat_Click;
             // 
             // menustripThoat
             // 
@@ -106,45 +111,53 @@
             // menustripTheLuuDong
             // 
             menustripTheLuuDong.Name = "menustripTheLuuDong";
-            menustripTheLuuDong.Size = new Size(180, 22);
+            menustripTheLuuDong.Size = new Size(159, 22);
             menustripTheLuuDong.Text = "Thẻ Lưu Động";
             menustripTheLuuDong.Click += thẻLưuĐộngToolStripMenuItem_Click;
             // 
             // sảnPhẩmToolStripMenuItem
             // 
             sảnPhẩmToolStripMenuItem.Name = "sảnPhẩmToolStripMenuItem";
-            sảnPhẩmToolStripMenuItem.Size = new Size(180, 22);
+            sảnPhẩmToolStripMenuItem.Size = new Size(159, 22);
             sảnPhẩmToolStripMenuItem.Text = "Sản Phẩm";
             sảnPhẩmToolStripMenuItem.Click += sảnPhẩmToolStripMenuItem_Click;
             // 
             // loạiSảnPhẩmToolStripMenuItem
             // 
             loạiSảnPhẩmToolStripMenuItem.Name = "loạiSảnPhẩmToolStripMenuItem";
-            loạiSảnPhẩmToolStripMenuItem.Size = new Size(180, 22);
+            loạiSảnPhẩmToolStripMenuItem.Size = new Size(159, 22);
             loạiSảnPhẩmToolStripMenuItem.Text = "Loại Sản Phẩm";
             loạiSảnPhẩmToolStripMenuItem.Click += loạiSảnPhẩmToolStripMenuItem_Click;
             // 
             // phiếuBánHàngToolStripMenuItem
             // 
             phiếuBánHàngToolStripMenuItem.Name = "phiếuBánHàngToolStripMenuItem";
-            phiếuBánHàngToolStripMenuItem.Size = new Size(180, 22);
+            phiếuBánHàngToolStripMenuItem.Size = new Size(159, 22);
             phiếuBánHàngToolStripMenuItem.Text = "Phiếu Bán Hàng";
             phiếuBánHàngToolStripMenuItem.Click += phiếuBánHàngToolStripMenuItem_Click;
             // 
             // msThongKe
             // 
+            msThongKe.DropDownItems.AddRange(new ToolStripItem[] { thốngKêTheoLoạiSPToolStripMenuItem, thốngKêTToolStripMenuItem });
             msThongKe.Image = Properties.Resources.Screenshot_2025_05_13_144544;
             msThongKe.Name = "msThongKe";
             msThongKe.Size = new Size(86, 20);
             msThongKe.Text = "Thống Kê";
+            msThongKe.Click += msThongKe_Click;
             // 
-            // msHoTro
+            // thốngKêTheoLoạiSPToolStripMenuItem
             // 
-            msHoTro.Image = Properties.Resources.sos;
-            msHoTro.Name = "msHoTro";
-            msHoTro.Size = new Size(71, 20);
-            msHoTro.Text = "Hỗ Trợ";
-            msHoTro.Click += msHoTro_Click;
+            thốngKêTheoLoạiSPToolStripMenuItem.Name = "thốngKêTheoLoạiSPToolStripMenuItem";
+            thốngKêTheoLoạiSPToolStripMenuItem.Size = new Size(213, 22);
+            thốngKêTheoLoạiSPToolStripMenuItem.Text = "Thống Kê Theo Loại SP";
+            thốngKêTheoLoạiSPToolStripMenuItem.Click += thốngKêTheoLoạiSPToolStripMenuItem_Click;
+            // 
+            // thốngKêTToolStripMenuItem
+            // 
+            thốngKêTToolStripMenuItem.Name = "thốngKêTToolStripMenuItem";
+            thốngKêTToolStripMenuItem.Size = new Size(213, 22);
+            thốngKêTToolStripMenuItem.Text = "Thống Kê Theo Nhân Viên";
+            thốngKêTToolStripMenuItem.Click += thốngKêTToolStripMenuItem_Click;
             // 
             // msNhanVien
             // 
@@ -153,6 +166,30 @@
             msNhanVien.Size = new Size(90, 20);
             msNhanVien.Text = "Nhân Viên";
             msNhanVien.Click += nhânViênToolStripMenuItem_Click_1;
+            // 
+            // msHoTro
+            // 
+            msHoTro.DropDownItems.AddRange(new ToolStripItem[] { liênHệColdLineToolStripMenuItem });
+            msHoTro.Image = Properties.Resources.sos;
+            msHoTro.Name = "msHoTro";
+            msHoTro.Size = new Size(71, 20);
+            msHoTro.Text = "Hỗ Trợ";
+            msHoTro.Click += msHoTro_Click;
+            // 
+            // liênHệColdLineToolStripMenuItem
+            // 
+            liênHệColdLineToolStripMenuItem.Name = "liênHệColdLineToolStripMenuItem";
+            liênHệColdLineToolStripMenuItem.Size = new Size(167, 22);
+            liênHệColdLineToolStripMenuItem.Text = "Liên Hệ Cold Line";
+            liênHệColdLineToolStripMenuItem.Click += liênHệColdLineToolStripMenuItem_Click;
+            // 
+            // trangChủToolStripMenuItem
+            // 
+            trangChủToolStripMenuItem.Image = Properties.Resources.Screenshot_2025_06_04_133737;
+            trangChủToolStripMenuItem.Name = "trangChủToolStripMenuItem";
+            trangChủToolStripMenuItem.Size = new Size(90, 20);
+            trangChủToolStripMenuItem.Text = "Trang Chủ";
+            trangChủToolStripMenuItem.Click += trangChủToolStripMenuItem_Click;
             // 
             // pnMain
             // 
@@ -234,5 +271,9 @@
         private ToolStripMenuItem sảnPhẩmToolStripMenuItem;
         private ToolStripMenuItem loạiSảnPhẩmToolStripMenuItem;
         private ToolStripMenuItem phiếuBánHàngToolStripMenuItem;
+        private ToolStripMenuItem thốngKêTheoLoạiSPToolStripMenuItem;
+        private ToolStripMenuItem thốngKêTToolStripMenuItem;
+        private ToolStripMenuItem liênHệColdLineToolStripMenuItem;
+        private ToolStripMenuItem trangChủToolStripMenuItem;
     }
 }

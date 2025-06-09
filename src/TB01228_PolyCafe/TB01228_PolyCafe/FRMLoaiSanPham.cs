@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.ConstrainedExecution;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -155,6 +156,7 @@ namespace GUI_PolyCafe
 
         private void btnLamMoi_Click(object sender, EventArgs e)
         {
+            ClearForm();
             LoadLoaiSanPham();
         }
 
@@ -185,6 +187,11 @@ namespace GUI_PolyCafe
                 SearchInAllCells(keyWord);
             }
             txtTimKiem.Clear();
+        }
+
+        private void txtTimKiem_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

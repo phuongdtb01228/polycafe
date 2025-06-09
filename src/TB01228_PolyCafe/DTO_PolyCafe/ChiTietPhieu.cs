@@ -8,7 +8,7 @@ namespace DTO_PolyCafe
 {
     public  class ChiTietPhieu
     {
-        
+        public string MaChiTiet { get; set; }
         public string MaPhieu { get; set; }
         public string MaSanPham { get; set; }
         public string TenSanPham { get; set; }

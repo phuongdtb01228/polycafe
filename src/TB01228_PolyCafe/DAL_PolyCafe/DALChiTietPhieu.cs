@@ -13,8 +13,8 @@ namespace DAL_PolyCafe
     {
         public string generateChiTietID()
         {
-            string prefix = "id";
-            string sql = "SELECT MAX(id) FROM ChiTietPhieu";
+            string prefix = "CTP";
+            string sql = "SELECT MAX(MaChiTiet) FROM ChiTietPhieu";
             List<object> thamSo = new List<object>();
             object result = DBUtil.ScalarQuery(sql, thamSo);
             if (result != null && result.ToString().StartsWith(prefix))
@@ -36,7 +36,7 @@ namespace DAL_PolyCafe
                 while (reader.Read())
                 {
                     ChiTietPhieu entity = new ChiTietPhieu();
-                    
+                    entity.MaChiTiet = reader.GetString("MaChiTiet");
                     entity.MaPhieu = reader.GetString("MaPhieu");
                     entity.MaSanPham = reader.GetString("MaSanPham");
                     entity.TenSanPham = reader.GetString("TenSanPham");
@@ -54,7 +54,7 @@ namespace DAL_PolyCafe
 
         public List<ChiTietPhieu> selectChiTietByMaPhieu(string maPhieu)
         {
-            string sql = "SELECT ct.id, ct.MaPhieu, ct.MaSanPham, ct.SoLuong, ct.DonGia, sp.TenSanPham " +
+            string sql = "SELECT ct.MaChiTiet, ct.MaPhieu, ct.MaSanPham, ct.SoLuong, ct.DonGia, sp.TenSanPham " +
                         "FROM ChiTietPhieu ct " +
                         "INNER JOIN SanPham sp ON ct.MaSanPham = sp.MaSanPham " +
                         "WHERE ct.MaPhieu = @0";
@@ -67,9 +67,9 @@ namespace DAL_PolyCafe
         {
             try
             {
-                string sql = @"INSERT INTO ChiTietPhieu (MaPhieu, MaSanPham, SoLuong, DonGia) VALUES (@0, @1, @2, @3, @4)";
+                string sql = @"INSERT INTO ChiTietPhieu (MaChiTiet, MaPhieu, MaSanPham, SoLuong, DonGia) VALUES (@0, @1, @2, @3, @4)";
                 List<object> thamSo = new List<object>();
-                
+                thamSo.Add(ct.MaChiTiet);
                 thamSo.Add(ct.MaPhieu);
                 thamSo.Add(ct.MaSanPham);
                 thamSo.Add(ct.SoLuong);
@@ -105,9 +105,9 @@ namespace DAL_PolyCafe
             {
                 string sql = @"UPDATE ChiTietPhieu 
                    SET SoLuong = @1 
-                   WHERE MaPhieu = @0";
+                   WHERE MaChiTiet = @0";
                 List<object> thamSo = new List<object>();
-                
+                thamSo.Add(ct.MaChiTiet);
                 thamSo.Add(ct.SoLuong);
                 DBUtil.Update(sql, thamSo);
             }
@@ -122,7 +122,7 @@ namespace DAL_PolyCafe
         {
             try
             {
-                string sql = "DELETE FROM ChiTietPhieu WHERE id = @0";
+                string sql = "DELETE FROM ChiTietPhieu WHERE MaChiTiet = @0";
                 List<object> thamSo = new List<object>();
                 thamSo.Add(Id);
                 DBUtil.Update(sql, thamSo);

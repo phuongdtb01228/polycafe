@@ -39,7 +39,7 @@ namespace GUI_PolyCafe
             DGVNhanVien.Columns["VaiTro"].Visible = false; // Ẩn cột Vai Trò
             DGVNhanVien.Columns["TrangThai"].Visible = false; // Ẩn cột Trạng Thái
 
-            DGVNhanVien.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+           
         }
 
         private void ClearForm()
@@ -242,6 +242,7 @@ namespace GUI_PolyCafe
 
         private void btnLamMoi_Click(object sender, EventArgs e)
         {
+            ClearForm();
             LoadDanhSachNhanVien();
         }
 

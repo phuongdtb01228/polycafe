@@ -7,6 +7,9 @@
     <Compile Update="frmDoiMatKhau1.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="FRMHoTro.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="FRMLoaiSanPham.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -28,7 +31,19 @@
     <Compile Update="FRMTheLuuDong.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="FRMThongKeLSP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FRMThongKeTheoNV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FRMThongTinTaiKhoan.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="FRMWelcome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="logomain.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>

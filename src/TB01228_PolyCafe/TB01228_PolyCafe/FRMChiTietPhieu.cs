@@ -20,7 +20,6 @@ namespace GUI_PolyCafe
         private List<ChiTietPhieu> lstChiTiet;
         private List<SanPham> lstSanPham;
         bool isActive = true;
-
         public FRMChiTietPhieu(TheLuuDong the, PhieuBanHang phieu, NhanVien nv)
         {
             InitializeComponent();
@@ -63,15 +62,15 @@ namespace GUI_PolyCafe
             dgrSanPham.Columns["HinhAnh"].HeaderText = "Hình Ảnh";
 
 
-            dgrSanPham.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            
         }
 
         private void loadChiTietPhieu(string maPhieu)
         {
-            BUSChiTietPhieu busChiTietPhieu = new BUSChiTietPhieu();
-            lstChiTiet = busChiTietPhieu.GetChiTietPhieuList(maPhieu);
+            BUSChiTietPhieu bus = new BUSChiTietPhieu();
+            lstChiTiet = bus.GetChiTietPhieuList(maPhieu);
             dgrChiTiet.DataSource = lstChiTiet;
-            
+            dgrChiTiet.Columns["MaChiTiet"].Visible = false;
             dgrChiTiet.Columns["MaPhieu"].Visible = false;
             dgrChiTiet.Columns["MaSanPham"].Visible = false;
             dgrChiTiet.Columns["TenSanPham"].HeaderText = "Sản Phẩm";
@@ -80,7 +79,7 @@ namespace GUI_PolyCafe
             dgrChiTiet.Columns["ThanhTien"].HeaderText = "Thành Tiền";
             dgrChiTiet.Columns["SoLuong"].ReadOnly = false;
 
-            dgrChiTiet.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            
             foreach (DataGridViewColumn col in dgrChiTiet.Columns)
             {
                 col.ReadOnly = true;
@@ -246,11 +245,16 @@ namespace GUI_PolyCafe
 
         private void btnXoaChiTiet_Click(object sender, EventArgs e)
         {
-            if (isActive)
+           if (isActive)
             {
                 return;
             }
             deleteChiTiet();
+        }
+
+        private void dgrSanPham_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

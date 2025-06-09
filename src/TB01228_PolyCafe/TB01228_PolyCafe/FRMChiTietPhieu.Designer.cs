@@ -156,6 +156,7 @@
             dgrSanPham.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dgrSanPham.Size = new Size(426, 444);
             dgrSanPham.TabIndex = 12;
+            dgrSanPham.CellContentClick += dgrSanPham_CellContentClick;
             dgrSanPham.CellDoubleClick += dgrSanPham_CellDoubleClick;
             // 
             // btnXoaChiTiet

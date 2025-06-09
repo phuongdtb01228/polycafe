@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.ConstrainedExecution;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -31,6 +32,8 @@ namespace GUI_PolyCafe
         {
             BUSTheLuuDong busTheLuuDong = new BUSTheLuuDong();
             dgvTheLuuDong.DataSource = null;
+            
+
             dgvTheLuuDong.DataSource = busTheLuuDong.GetTheLuuDongList();
             dgvTheLuuDong.Columns["MaThe"].HeaderText = "Mã Thẻ";
             dgvTheLuuDong.Columns["ChuSoHuu"].HeaderText = "Chủ Sỡ Hữu";
@@ -38,6 +41,8 @@ namespace GUI_PolyCafe
             dgvTheLuuDong.Columns["TrangThai"].Visible = false; // Ẩn cột Trạng Thái
 
             dgvTheLuuDong.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dgvTheLuuDong.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
+            
         }
 
         private void ClearForm()
@@ -173,6 +178,7 @@ namespace GUI_PolyCafe
 
         private void btnLamMoi_Click(object sender, EventArgs e)
         {
+            ClearForm();
             LoadTheLuuDong();
         }
 

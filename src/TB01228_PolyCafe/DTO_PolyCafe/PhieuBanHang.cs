@@ -17,5 +17,6 @@ namespace DTO_PolyCafe
         public string? HoTen { get; set; }
         public DateTime NgayTao { get; set; } = new DateTime();
         public bool TrangThai { get; set; } = true;
+        public string TrangThaiText => TrangThai ? "Đã Thanh Toán" : "Chờ Xác Nhận";
     }
 }

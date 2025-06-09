@@ -269,7 +269,7 @@
             // txttimKiemPhieu
             // 
             txttimKiemPhieu.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            txttimKiemPhieu.Location = new Point(123, 20);
+            txttimKiemPhieu.Location = new Point(98, 19);
             txttimKiemPhieu.Name = "txttimKiemPhieu";
             txttimKiemPhieu.Size = new Size(384, 23);
             txttimKiemPhieu.TabIndex = 12;
@@ -306,12 +306,13 @@
             // 
             // btnTimKiemPhieu
             // 
-            btnTimKiemPhieu.Location = new Point(513, 19);
+            btnTimKiemPhieu.Location = new Point(507, 18);
             btnTimKiemPhieu.Name = "btnTimKiemPhieu";
             btnTimKiemPhieu.Size = new Size(75, 23);
             btnTimKiemPhieu.TabIndex = 15;
-            btnTimKiemPhieu.Text = "button1";
+            btnTimKiemPhieu.Text = "Tìm Kiếm";
             btnTimKiemPhieu.UseVisualStyleBackColor = true;
+            btnTimKiemPhieu.Click += btnTimKiemPhieu_Click;
             // 
             // FRMPhieuBanHang
             // 

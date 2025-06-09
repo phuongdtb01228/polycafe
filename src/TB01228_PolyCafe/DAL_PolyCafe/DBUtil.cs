@@ -11,7 +11,7 @@ namespace DAL_PolyCafe
 {
     public class DBUtil
     {
-        private static string connString = @"Data Source=PHUONG-SD1904\SQLEXPRESS;Initial Catalog=SOF2052_PolyCafe;Integrated Security=True;Trust Server Certificate=True";
+        private static string connString = @"Data Source=PHUONG-SD1904\SQLEXPRESS;Initial Catalog=PolyCafe;Integrated Security=True;Trust Server Certificate=True";
         public static SqlCommand GetCommand(string sql, List<Object> args, CommandType cmdType)
         {
             SqlConnection conn = new SqlConnection(connString);

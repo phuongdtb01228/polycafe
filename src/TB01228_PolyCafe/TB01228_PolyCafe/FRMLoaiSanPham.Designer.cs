@@ -67,6 +67,7 @@
             txtTimKiem.Name = "txtTimKiem";
             txtTimKiem.Size = new Size(145, 23);
             txtTimKiem.TabIndex = 49;
+            txtTimKiem.TextChanged += txtTimKiem_TextChanged;
             // 
             // btnTimKiem
             // 

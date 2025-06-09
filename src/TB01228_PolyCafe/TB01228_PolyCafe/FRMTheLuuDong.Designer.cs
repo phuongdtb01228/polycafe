@@ -75,6 +75,7 @@
             // 
             // dgvTheLuuDong
             // 
+            dgvTheLuuDong.AllowUserToAddRows = false;
             dgvTheLuuDong.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvTheLuuDong.Location = new Point(394, 115);
             dgvTheLuuDong.Name = "dgvTheLuuDong";

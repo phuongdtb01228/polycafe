@@ -80,3 +80,8 @@ E:\DU_AN_C#\TB01228_PolyCafe\TB01228_PolyCafe\obj\Debug\net8.0-windows\GUI_PolyC
 E:\DU_AN_C#\TB01228_PolyCafe\TB01228_PolyCafe\obj\Debug\net8.0-windows\GUI_PolyCafe.FRMSanPham.resources
 E:\DU_AN_C#\TB01228_PolyCafe\TB01228_PolyCafe\obj\Debug\net8.0-windows\GUI_PolyCafe.FRMChiTietPhieu.resources
 E:\DU_AN_C#\TB01228_PolyCafe\TB01228_PolyCafe\obj\Debug\net8.0-windows\GUI_PolyCafe.FRMPhieuBanHang.resources
+E:\DU_AN_C#\TB01228_PolyCafe\TB01228_PolyCafe\obj\Debug\net8.0-windows\GUI_PolyCafe.FRMThongKeLSP.resources
+E:\DU_AN_C#\TB01228_PolyCafe\TB01228_PolyCafe\obj\Debug\net8.0-windows\GUI_PolyCafe.FRMThongKeTheoNV.resources
+E:\DU_AN_C#\TB01228_PolyCafe\TB01228_PolyCafe\obj\Debug\net8.0-windows\GUI_PolyCafe.FRMThongTinTaiKhoan.resources
+E:\DU_AN_C#\TB01228_PolyCafe\TB01228_PolyCafe\obj\Debug\net8.0-windows\GUI_PolyCafe.FRMHoTro.resources
+E:\DU_AN_C#\TB01228_PolyCafe\TB01228_PolyCafe\obj\Debug\net8.0-windows\GUI_PolyCafe.logomain.resources

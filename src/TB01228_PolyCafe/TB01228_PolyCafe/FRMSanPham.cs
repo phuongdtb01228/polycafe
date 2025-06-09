@@ -31,9 +31,9 @@ namespace GUI_PolyCafe
             dgvSanPham.Columns["TenSanPham"].HeaderText = "Tên Sản Phẩm";
             dgvSanPham.Columns["DonGia"].HeaderText = "Đơn Giá";
             dgvSanPham.Columns["MaLoai"].HeaderText = "Mã Loại";
-            dgvSanPham.Columns["TrangThai"].HeaderText = "Trạng Thái";
+            dgvSanPham.Columns["TrangThaiText"].HeaderText = "Trạng Thái";
             dgvSanPham.Columns["TrangThai"].Visible = false; // Ẩn cột Trạng Thái
-            dgvSanPham.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            
 
         }
 
@@ -70,7 +70,7 @@ namespace GUI_PolyCafe
                     return;
                 }
 
-                string savedPath = ImageUtil.SaveImage(pbHinhAnh.Image, "Uploads/SanPham");
+                string savedPath = ImageUtil.SaveImage(pbHinhAnh.Image, "Uploads");
 
                 // Tạo đối tượng sản phẩm
                 SanPham sp = new SanPham

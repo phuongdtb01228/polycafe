@@ -11,5 +11,10 @@ namespace DTO_PolyCafe
         public string MaLoai { get; set; }
         public string TenLoai { get; set; }
         public string GhiChu { get; set; }
+
+        public override string ToString()
+        {
+            return TenLoai;
+        }
     }
 }

@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using BLL_PolyCafe;
+using DAL_PolyCafe;
 using DTO_PolyCafe;
 using UTIL_PolyCafe;
 
@@ -102,7 +103,7 @@ namespace GUI_PolyCafe
             dgrDanhSachPhieu.Columns["ThanhToan"].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
             dgrDanhSachPhieu.RowTemplate.Height = 50;
 
-            dgrDanhSachPhieu.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+
         }
 
         private void FRMPhieuBanHang_Load(object sender, EventArgs e)
@@ -338,6 +339,36 @@ namespace GUI_PolyCafe
             LoadTheLuuDong();
             LoadNhanVien();
             LoadDanhSachPhieu("");
+        }
+
+        private void SearchInAllCells(string keyword)
+        {
+            foreach (DataGridViewRow row in dgrDanhSachPhieu.Rows)
+            {
+                foreach (DataGridViewCell cell in row.Cells)
+                {
+                    if (cell.Value != null && cell.Value.ToString().ToLower().Contains(keyword.ToLower()))
+                    {
+
+                        row.Selected = true;
+                        break;
+                    }
+                    else
+                    {
+                        row.Selected = false;
+                    }
+                }
+            }
+        }
+
+        private void btnTimKiemPhieu_Click(object sender, EventArgs e)
+        {
+            string keyWord = txttimKiemPhieu.Text;
+            if (!string.IsNullOrWhiteSpace(keyWord))
+            {
+                SearchInAllCells(keyWord);
+            }
+            txttimKiemPhieu.Clear();
         }
     }
 }
