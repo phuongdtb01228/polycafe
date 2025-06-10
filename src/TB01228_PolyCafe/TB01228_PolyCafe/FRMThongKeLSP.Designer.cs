@@ -78,13 +78,16 @@
             // 
             // dtpTuNgay
             // 
+            dtpTuNgay.CustomFormat = "dd/MM/yyyy";
             dtpTuNgay.Location = new Point(339, 80);
             dtpTuNgay.Name = "dtpTuNgay";
             dtpTuNgay.Size = new Size(216, 23);
             dtpTuNgay.TabIndex = 4;
+            dtpTuNgay.Value = new DateTime(2025, 6, 10, 13, 20, 50, 0);
             // 
             // dtpDenNgay
             // 
+            dtpDenNgay.CustomFormat = "dd/MM/yyyy";
             dtpDenNgay.Location = new Point(645, 80);
             dtpDenNgay.Name = "dtpDenNgay";
             dtpDenNgay.Size = new Size(216, 23);

@@ -112,6 +112,9 @@ namespace GUI_PolyCafe
             LoadTheLuuDong();
             LoadNhanVien();
             LoadDanhSachPhieu("");
+            dtpNgayTao.Format = DateTimePickerFormat.Custom;
+            dtpNgayTao.CustomFormat = "dd/MM/yyyy HH:mm:ss";
+            
         }
 
         private void dgrDanhSachPhieu_CellDoubleClick(object sender, DataGridViewCellEventArgs e)

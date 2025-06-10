@@ -34,6 +34,11 @@ namespace GUI_PolyCafe
         private void FRMThongKeTheoNV_Load(object sender, EventArgs e)
         {
             LoadNhanVien();
+            dtpTuNgay.Format = DateTimePickerFormat.Custom;
+            dtpTuNgay.CustomFormat = "dd/MM/yyyy HH:mm:ss";
+            dtpDenNgay.Format = DateTimePickerFormat.Custom;
+            dtpDenNgay.CustomFormat = "dd/MM/yyyy HH:mm:ss";
+
         }
 
         private void btnThongKe_Click(object sender, EventArgs e)
